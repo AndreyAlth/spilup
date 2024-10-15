@@ -1,13 +1,10 @@
 import { Header } from './components/Header'
+import { ImageContainer } from './components/ImageContainer'
 export default function Home() {
-  const headers = [
-    { id: 2, label: "Home", href: "#" },
-    { id: 3, label: "Servicios", href: "#" },
-    { id: 4, label: "Contacto", href: "#" },
-  ];
   return (
     <div>
       <Header/>
+      <ImageContainer/>
     </div>
   );
 }

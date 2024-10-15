@@ -1,22 +1,39 @@
-import React from "react";
-import * as Form from "@radix-ui/react-form";
+import React, { ReactNode } from "react";
+/* import { Root, Field, Label, Control, Message, Submit , FormFieldProps } from "@radix-ui/react-form"; */
+import * as Form from '@radix-ui/react-form'
 
-export const FormRoot = () => {
-  return <Form.Root></Form.Root>;
+interface Props {
+    children: ReactNode
+}
+
+interface PropsField extends Props {
+    name: Form.FormFieldProps["name"]
+}
+
+interface PropsMessage extends Props {
+    match: Form.FormMessageProps["match"]
+}
+
+export const FormRoot = ({ children }:Props) => {
+  return <Form.Root className="FormRoot">{children}</Form.Root>;
 };
 
-export const FormField = () => {
-  return <div>Form</div>;
+export const FormField = ({ children, name }:PropsField) => {
+  return <Form.Field className="FormField" name={name}>{children}</Form.Field>;
 };
-export const FormLabel = () => {
-  return <div>Form</div>;
+
+export const FormLabel = ({ children }:Props) => {
+  return <Form.Label className="FormLabel">{children}</Form.Label>;
 };
-export const FormControl = () => {
-  return <div>Form</div>;
+
+export const FormControl = ({ children }:Props) => {
+  return <Form.Control asChild>{children}</Form.Control>;
 };
-export const FormMessage = () => {
-  return <div>Form</div>;
+
+export const FormMessage = ({ children, match }:PropsMessage) => {
+  return <Form.Message className="FormMessage" match={match}>{children}</Form.Message>;
 };
-export const FormSubmit = () => {
-  return <div>Form</div>;
+
+export const FormSubmit = ({ children }:Props) => {
+  return <Form.Submit asChild>{children}</Form.Submit>;
 };

@@ -1,10 +1,10 @@
 /* reset */
-/* input,
+input,
 textarea,
 button {
 	all: unset;
 	box-sizing: border-box;
-} */
+}
 
 .FormRoot {
 	width: 260px;
@@ -24,11 +24,11 @@ button {
 
 .FormMessage {
 	font-size: 13px;
-	color: white;
+	color: #E5484D;
 	opacity: 0.8;
 }
 
-/* .Input,
+.Input,
 .Textarea {
 	width: 100%;
 	display: inline-flex;
@@ -90,4 +90,4 @@ button {
 
 .Button:focus {
 	box-shadow: 0 0 0 2px black;
-} */
+}

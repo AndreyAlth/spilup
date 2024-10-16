@@ -1,14 +1,16 @@
 import { Header } from "./components/Header";
-import { ImageContainer } from "./components/ImageContainer";
+import { Hero } from "./components/Hero";
 import { Services } from "./partial/Services";
-import { Contacto } from "./partial/Contacto";
+import { Contact } from "./partial/Contacto";
+import { Footer } from './components/Footer'
 export default function Home() {
   return (
     <div>
       <Header />
-      <ImageContainer />
+      <Hero />
       <Services />
-      <Contacto />
+      <Contact />
+      <Footer/>
     </div>
   );
 }

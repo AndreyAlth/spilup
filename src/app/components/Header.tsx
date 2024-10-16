@@ -1,24 +1,22 @@
-import React from "react";
+import React from 'react';
+import { Code } from 'lucide-react';
 
 export const Header = () => {
   return (
-    <div className="shadow-lg">
-      <div className="flex items-center justify-between">
-        <div className="Link">
-          <a href="">Spilup</a>
+    <header className="bg-purple-600 text-white py-4">
+      <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="flex items-center space-x-2">
+          <Code size={24} />
+          <span className="text-xl font-bold">DevAgency</span>
         </div>
-        <div className="flex">
-          <div className="Link">
-            <a href="#">Home</a>
-          </div>
-          <div className="Link">
-            <a href="#">Servicios</a>
-          </div>
-          <div className="Link">
-            <a href="#">Contactos</a>
-          </div>
-        </div>
+        <nav>
+          <ul className="flex space-x-6">
+            <li><a href="#services" className="hover:text-purple-200">Services</a></li>
+            <li><a href="#portfolio" className="hover:text-purple-200">Portfolio</a></li>
+            <li><a href="#contact" className="hover:text-purple-200">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 };

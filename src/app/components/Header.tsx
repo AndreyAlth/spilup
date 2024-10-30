@@ -7,7 +7,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <Code size={24} />
-          <span className="text-xl font-bold">DevAgency</span>
+          <span className="text-xl font-bold">Spilup</span>
         </div>
         <nav>
           <ul className="flex space-x-6">

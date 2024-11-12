@@ -2,6 +2,7 @@
 import React from 'react';
 import { Code } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import i18n from '../i18n/i18Config';
 
 export const Header = () => {
   const { t } = useTranslation()
@@ -18,6 +19,9 @@ export const Header = () => {
             <li><a href="#portfolio" className="hover:text-purple-200">Portfolio</a></li>
             <li><a href="#contact" className="hover:text-purple-200">Contact</a></li>
             <li><a href="#contact" className="hover:text-purple-200">{t('hero.title')}</a></li>
+            <button onClick={() => {
+              i18n.changeLanguage('es')
+            }}>click</button>
           </ul>
         </nav>
       </div>

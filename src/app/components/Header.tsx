@@ -1,7 +1,10 @@
+'use client'
 import React from 'react';
 import { Code } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const Header = () => {
+  const { t } = useTranslation()
   return (
     <header className="bg-purple-600 text-white py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -14,6 +17,7 @@ export const Header = () => {
             <li><a href="#services" className="hover:text-purple-200">Services</a></li>
             <li><a href="#portfolio" className="hover:text-purple-200">Portfolio</a></li>
             <li><a href="#contact" className="hover:text-purple-200">Contact</a></li>
+            <li><a href="#contact" className="hover:text-purple-200">{t('hero.title')}</a></li>
           </ul>
         </nav>
       </div>

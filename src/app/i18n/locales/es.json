@@ -1,7 +1,45 @@
 {
-    "Welcome to React": "Welcome to React and react-i18next dss",
-    "key": "njdsnjkns",
-    "hero": {
-      "title": "titulo"
+  "navbar": {
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "contact": "Contacto",
+    "select": {
+      "en": "Ingles",
+      "es": "Español"
     }
+  },
+  "hero": {
+    "title": "Soluciones Inovadoras",
+    "subtitle": "Transformamos tus idea en aplicaciones web",
+    "button": "Comenzar",
+    "seccion": {
+      "web": "Desarrollo de aplicaciones web a la medida",
+      "ai": "Implementación de modelos de inteligencia artificial",
+      "oddo": "Implementación de sistemas Odoo"
+    }
+  },
+  "services":{
+    "title": "Nuestros servicios",
+    "web": {
+      "title": "Desarrollo web",
+      "content": "Desarrollo web a la medida"
+    },
+    "ai": {
+      "title": "Inteligencia Artificial",
+      "content": "Implementación de modelos de inteligencia artificial"
+    },
+    "odoo": {
+      "title": "Odoo",
+      "content": "Desarrollo de sistemas Odoo"
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar"
+    }
+  }
 }

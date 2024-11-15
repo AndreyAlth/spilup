@@ -1,7 +1,45 @@
 {
-    "Welcome to React": "Welcome to React and react-i18next dss",
-    "key": "njdsnjkns",
-    "hero": {
-      "title": "title"
+  "navbar": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "select": {
+      "en": "English",
+      "es": "Spanish"
     }
+  },
+  "hero": {
+    "title": "Innovative Solutions",
+    "subtitle": "We transform ideas into web applications",
+    "button": "Get Started",
+    "seccion": {
+      "web": "We develope web aplications",
+      "ai": "Implementación of AI models",
+      "odoo": "Implementation Oddo"
+    }
+  },
+  "services":{
+    "title": "Our services",
+    "web": {
+      "title": "Web Aplications",
+      "content": "We develope web aplications"
+    },
+    "ai": {
+      "title": "Artificial Inteligence",
+      "content": "Implementation of AI models"
+    },
+    "odoo": {
+      "title": "Odoo",
+      "content": "Implementation od Oddo"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
+  }
 }

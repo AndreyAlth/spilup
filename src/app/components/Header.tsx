@@ -16,10 +16,9 @@ export const Header = () => {
         </div>
         <nav>
           <ul className="flex items-center space-x-6">
-            <li><a href="#services" className="hover:text-purple-200">Services</a></li>
-            <li><a href="#portfolio" className="hover:text-purple-200">Portfolio</a></li>
-            <li><a href="#contact" className="hover:text-purple-200">Contact</a></li>
-            <li><a href="#contact" className="hover:text-purple-200">{t('hero.title')}</a></li>
+            <li><a href="#services" className="hover:text-purple-200">{t('navbar.services')}</a></li>
+            <li><a href="#portfolio" className="hover:text-purple-200">{t('navbar.portfolio')}</a></li>
+            <li><a href="#contact" className="hover:text-purple-200">{t('navbar.contact')}</a></li>
             <SelectInput/>
           </ul>
         </nav>

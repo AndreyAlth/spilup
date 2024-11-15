@@ -14,16 +14,16 @@
 	gap: 5px;
 	background-color: white;
 	color: var(--violet-11);
-	box-shadow: 0 2px 10px black;
+	/* box-shadow: 0 2px 10px rgb(255, 252, 252); */
 }
 .SelectTrigger:hover {
-	background-color: gray;
+	/* background-color: gray; */
 }
 .SelectTrigger:focus {
-	box-shadow: 0 0 0 2px black;
+	/* box-shadow: 0 0 0 2px black; */
 }
 .SelectTrigger[data-placeholder] {
-	color: violet;
+	/* color: violet; */
 }
 
 .SelectIcon {

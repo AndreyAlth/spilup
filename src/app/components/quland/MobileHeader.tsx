@@ -72,7 +72,7 @@ export const MobileHeader = () => {
   }, []);
 
   useEffect(() => {
-    if (window) {
+    if (typeof window !== "undefined") {
       const handleHashChange = () => {
         setIsNavActive(false);
       };
@@ -84,6 +84,8 @@ export const MobileHeader = () => {
       };
     }
   }, []);
+
+  if (typeof window === "undefined") return null;
 
   return (
     <header className="relative flex flex-col xl:hidden">

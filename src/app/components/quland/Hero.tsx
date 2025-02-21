@@ -37,7 +37,7 @@ export function Hero() {
   const perspectiveValue = 20; // Initial perspective value
 
   useEffect(() => {
-    if (window) {
+    if (typeof window !== "undefined") {
       const handleScroll = () => {
         const top = window.scrollY || document.documentElement.scrollTop;
         if (imageRef.current) {
@@ -60,6 +60,8 @@ export function Hero() {
     
   }, []);
 
+  if (typeof window === "undefined") return null;
+
   useEffect(() => {
     let lightbox = GLightbox({
       // Optional GLightbox configuration options
@@ -68,6 +70,7 @@ export function Hero() {
       loop: false,
     });
   }, []);
+  
   return (
     <>
       <section id="banner" className="w-full">

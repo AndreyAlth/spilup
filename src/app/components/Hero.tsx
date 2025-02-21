@@ -1,14 +1,17 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { Code, Smartphone, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const Hero = () => {
+  const { t } = useTranslation()
   const [activeIndex, setActiveIndex] = useState(0);
   const features = [
-    { icon: Code, text: "Custom Web Development" },
-    { icon: Smartphone, text: "Mobile App Solutions" },
-    { icon: Globe, text: "Global Digital Presence" },
+    { icon: Code, text: `${t('hero.seccion.web')}` },
+    { icon: Smartphone, text: `${t('hero.seccion.ai')}` },
+    { icon: Globe, text: `${t('hero.seccion.odoo')}` },
   ];
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,17 +27,15 @@ export const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-10 md:mb-0 flex flex-col">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-              Innovative Solutions for Your{' '}
-              <span className="text-purple-200">Digital Needs</span>
+              {t('hero.title')}{' '}
             </h1>
-            <p className="text-xl mb-8 text-purple-100">
-              We transform ideas into powerful web and mobile applications
+            <p className="text-xl mb-8 text-purple-100">{t('hero.subtitle')}
             </p>
             <a
               href="#contact"
               className="w-fit bg-white text-purple-700 py-3 px-8 rounded-full font-semibold hover:bg-purple-100 transition duration-300 inline-block shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              Get Started
+              {t('hero.button')}
             </a>
           </div>
           <div className="md:w-1/2">

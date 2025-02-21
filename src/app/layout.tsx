@@ -1,4 +1,5 @@
 import './globals.css'
+import { Provider } from './i18n/Provider'
 
 export default function RootLayout({
   children,
@@ -8,7 +9,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Spilup</title>
-      <body className="">{children}</body>
+      <body className="">
+        <Provider>
+        {children}
+        </Provider>
+      </body>
     </html>
   );
 }

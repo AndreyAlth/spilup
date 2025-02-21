@@ -37,24 +37,27 @@ export function Hero() {
   const perspectiveValue = 20; // Initial perspective value
 
   useEffect(() => {
-    const handleScroll = () => {
-      const top = window.pageYOffset || document.documentElement.scrollTop;
-      if (imageRef.current) {
-        if (top > 500) {
-          imageRef.current.style.transform = "none";
-        } else {
-          const calcValue = perspectiveValue + top / 2;
-          imageRef.current.style.transform = `perspective(${calcValue}px) rotateX(1deg)`;
+    if (window) {
+      const handleScroll = () => {
+        const top = window.scrollY || document.documentElement.scrollTop;
+        if (imageRef.current) {
+          if (top > 500) {
+            imageRef.current.style.transform = "none";
+          } else {
+            const calcValue = perspectiveValue + top / 2;
+            imageRef.current.style.transform = `perspective(${calcValue}px) rotateX(1deg)`;
+          }
         }
-      }
-    };
-
-    document.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
+      };
+  
+      document.addEventListener("scroll", handleScroll);
+  
+      // Clean up the event listener on component unmount
+      return () => {
+        document.removeEventListener("scroll", handleScroll);
+      };
+    }
+    
   }, []);
 
   useEffect(() => {

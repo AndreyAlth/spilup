@@ -72,15 +72,17 @@ export const MobileHeader = () => {
   }, []);
 
   useEffect(() => {
-    const handleHashChange = () => {
-      setIsNavActive(false);
-    };
-
-    window.addEventListener("hashchange", handleHashChange);
-
-    return () => {
-      window.removeEventListener("hashchange", handleHashChange);
-    };
+    if (window) {
+      const handleHashChange = () => {
+        setIsNavActive(false);
+      };
+  
+      window.addEventListener("hashchange", handleHashChange);
+  
+      return () => {
+        window.removeEventListener("hashchange", handleHashChange);
+      };
+    }
   }, []);
 
   return (

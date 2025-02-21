@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('./style/radix/index.css');
+/* @import url('./style/radix/index.css'); */
+@import url('./style/quland/style.css');
+@import url('./style/quland//style2.css');
 
 /* body{
   background-color: gray;
 } */
 
-.Link {
+/* .Link {
 	padding: 8px 12px;
 	outline: none;
 	user-select: none;
@@ -43,4 +45,4 @@
   .bg-gradient-animate {
 	background-size: 200% 200%;
 	animation: gradientFlow 15s ease infinite;
-  }
+  } */

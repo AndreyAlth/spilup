@@ -139,8 +139,8 @@ export function Hero() {
                           </svg>
                         </span>
                         <div className="absolute top-0 left-0 w-full h-full rounded-full play-btn-line1"></div>
-                        <div className="absolute w-full h-full rounded-full play-btn-line2"></div>
-                        <div className="absolute w-full h-full rounded-full play-btn-line3"></div>
+                        <div className="absolute rounded-full play-btn-line2"></div>
+                        <div className="absolute rounded-full play-btn-line3"></div>
                       </span>
                       <span className="font-semibold text-white border-b border-white">
                         How IT Works

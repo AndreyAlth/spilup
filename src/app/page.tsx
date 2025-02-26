@@ -15,7 +15,6 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    console.log(AOS)
   }, []);
   return (
     <div>

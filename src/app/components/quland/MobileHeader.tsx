@@ -1,43 +1,43 @@
-"use client";
-import React, { useState, useEffect, useRef } from "react";
-import Link from "next/link";
+'use client';
+import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const menuData = [
   {
-    title: "Home",
+    title: 'Home',
     subMenu: [
-      { title: "Digital Marketing", href: "" },
-      { title: "SEO Agency", href: "/home-two" },
-      { title: "Creative Agency", href: "/home-three" },
-      { title: "AI Software", href: "/home-four" },
-      { title: "Business Consulting", href: "/home-five" },
-      { title: "ELearning", href: "/home-six" },
-      { title: "IT Business", href: "/home-seven" },
-      { title: "Saas", href: "/home-eight" },
-      { title: "App Landing", href: "/home-nine" },
-      { title: "Personal Portfolio", href: "/home-ten" },
-    ],
+      { title: 'Digital Marketing', href: '' },
+      { title: 'SEO Agency', href: '/home-two' },
+      { title: 'Creative Agency', href: '/home-three' },
+      { title: 'AI Software', href: '/home-four' },
+      { title: 'Business Consulting', href: '/home-five' },
+      { title: 'ELearning', href: '/home-six' },
+      { title: 'IT Business', href: '/home-seven' },
+      { title: 'Saas', href: '/home-eight' },
+      { title: 'App Landing', href: '/home-nine' },
+      { title: 'Personal Portfolio', href: '/home-ten' }
+    ]
   },
-  { title: "Company", href: "/about" },
-  { title: "Services", href: "/services" },
-  { title: "Blogs", href: "/blogs" },
+  { title: 'Company', href: '/about' },
+  { title: 'Services', href: '/services' },
+  { title: 'Blogs', href: '/blogs' },
   {
-    title: "Pages",
+    title: 'Pages',
     subMenu: [
-      { title: "Projects", href: "/projects" },
-      { title: "Projects Details", href: "/project-details/" },
-      { title: "Service Details", href: "/service-details" },
-      { title: "Blog Details", href: "/blog-details" },
-      { title: "Team Members", href: "/teams" },
-      { title: "FAQ's", href: "/faqs" },
-      { title: "Pricing", href: "/pricing" },
-      { title: "Course Details", href: "/course-details" },
-      { title: "Cart", href: "/cart" },
-      { title: "Checkout", href: "/checkout" },
-      { title: "Not Found", href: "/notfound" },
-    ],
+      { title: 'Projects', href: '/projects' },
+      { title: 'Projects Details', href: '/project-details/' },
+      { title: 'Service Details', href: '/service-details' },
+      { title: 'Blog Details', href: '/blog-details' },
+      { title: 'Team Members', href: '/teams' },
+      { title: "FAQ's", href: '/faqs' },
+      { title: 'Pricing', href: '/pricing' },
+      { title: 'Course Details', href: '/course-details' },
+      { title: 'Cart', href: '/cart' },
+      { title: 'Checkout', href: '/checkout' },
+      { title: 'Not Found', href: '/notfound' }
+    ]
   },
-  { title: "Contact", href: "contact" },
+  { title: 'Contact', href: 'contact' }
 ];
 
 export const MobileHeader = () => {
@@ -48,11 +48,11 @@ export const MobileHeader = () => {
   const toggleMenuRef = useRef(null);
 
   const toggleNav = () => {
-    setIsNavActive((prev) => !prev);
+    setIsNavActive(prev => !prev);
   };
 
-  const toggleSubNav = (index:any) => {
-    setActiveSubNav((prev) => (prev === index ? null : index));
+  const toggleSubNav = (index: any) => {
+    setActiveSubNav(prev => (prev === index ? null : index));
   };
 
   useEffect(() => {
@@ -61,37 +61,40 @@ export const MobileHeader = () => {
     };
 
     if (overlayRef.current) {
-      overlayRef.current.addEventListener("click", handleOverlayClick);
+      overlayRef.current.addEventListener('click', handleOverlayClick);
     }
 
     return () => {
       if (overlayRef.current) {
-        overlayRef.current.removeEventListener("click", handleOverlayClick);
+        overlayRef.current.removeEventListener('click', handleOverlayClick);
       }
     };
   }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       const handleHashChange = () => {
         setIsNavActive(false);
       };
-  
-      window.addEventListener("hashchange", handleHashChange);
-  
+
+      window.addEventListener('hashchange', handleHashChange);
+
       return () => {
-        window.removeEventListener("hashchange", handleHashChange);
+        window.removeEventListener('hashchange', handleHashChange);
       };
     }
   }, []);
 
-  if (typeof window === "undefined") return null;
+  if (typeof window === 'undefined') return null;
 
   return (
     <header className="relative flex flex-col xl:hidden">
       <div className="h-16 bg-white flex items-center justify-between fixed top-0 left-0 z-50 w-full px-2.5">
         <Link href="/" aria-label="logo">
-          <img src="/assets/images/home-two/logo.svg" alt="logo" />
+          <div className="flex flex-row">
+            <img src="/assets/icons/logo_color_1.svg" alt="logo" width={45} />
+            <img src="/assets/icons/nombre_morado.svg" alt="" width={100} />
+          </div>
         </Link>
         <button
           aria-label="mobile-Menu"
@@ -101,7 +104,7 @@ export const MobileHeader = () => {
         >
           <svg
             className={`transition-all duration-300 pointer-events-none ${
-              isNavActive ? "hidden" : ""
+              isNavActive ? 'hidden' : ''
             }`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -110,7 +113,7 @@ export const MobileHeader = () => {
           </svg>
           <svg
             className={`transition-all duration-300 pointer-events-none ${
-              isNavActive ? "" : "hidden"
+              isNavActive ? '' : 'hidden'
             }`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 384 512"
@@ -122,14 +125,14 @@ export const MobileHeader = () => {
       <div className="transition-all duration-300">
         <div
           className={`fixed z-40 w-full h-screen transition-all duration-300 delay-150 bg-black/80 ${
-            isNavActive ? "left-0" : "-left-full"
+            isNavActive ? 'left-0' : '-left-full'
           }`}
           id="mobile-nav-div-overlay"
           ref={overlayRef}
         ></div>
         <div
           className={`fixed z-50 w-full h-screen overflow-y-scroll transition-all duration-300 bg-white top-16 ${
-            isNavActive ? "left-0" : "-left-full"
+            isNavActive ? 'left-0' : '-left-full'
           }`}
           id="mobile-nav-div"
           ref={navRef}
@@ -164,7 +167,7 @@ export const MobileHeader = () => {
                       </button>
                       <ul
                         className={`overflow-hidden transition-all font-medium h-[150px] duration-300 pl-5 pt-4 ${
-                          activeSubNav === index ? "" : "mobile-sub-nav"
+                          activeSubNav === index ? '' : 'mobile-sub-nav'
                         }`}
                       >
                         {menuItem.subMenu.map((subItem, subIndex) => (

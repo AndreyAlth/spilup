@@ -11,7 +11,10 @@ export function LandingHeader() {
             <div className="flex space-x-[100px] items-center">
               <div>
                 <Link href="#">
-                  <img src="/assets/images/home-four/logo.webp" alt="logo" />
+                  <div className="flex flex-row">
+                    <img src="/assets/icons/logo_color_1.svg" alt="logo" width={45}/>
+                    <img src="/assets/icons/nombre.svg" alt="" width={100}/>
+                  </div>
                 </Link>
               </div>
               <div>

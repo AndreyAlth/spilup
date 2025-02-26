@@ -9,6 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Spilup</title>
+      <link rel="icon" href="/assets/icons/logo_color_1.svg" />
       <body className="">
         <Provider>
         {children}

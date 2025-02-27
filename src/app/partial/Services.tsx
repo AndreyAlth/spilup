@@ -4,7 +4,7 @@ import { Globe, Smartphone, Code } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 interface ServiceCardProps {
-    icon: any;
+    icon: React.ComponentType<{ className?: string }>;
     title: string;
     description: string;
 }

@@ -5,26 +5,14 @@ import { useTranslation } from 'react-i18next';
 
 const menuData = [
   {
-    title: 'navbar.services',
-    subMenu: [
-      { title: 'Digital Marketing', href: '' },
-      { title: 'SEO Agency', href: '/home-two' },
-      { title: 'Creative Agency', href: '/home-three' },
-      { title: 'AI Software', href: '/home-four' },
-      { title: 'Business Consulting', href: '/home-five' },
-      { title: 'ELearning', href: '/home-six' },
-      { title: 'IT Business', href: '/home-seven' },
-      { title: 'Saas', href: '/home-eight' },
-      { title: 'App Landing', href: '/home-nine' },
-      { title: 'Personal Portfolio', href: '/home-ten' }
-    ]
+    title: 'navbar.services', href: '/'
   },
   { title: 'FAQ', href: '/about' },
   {
     title: 'navbar.lenguage',
     subMenu: [
-      { title: 'Es', button: true, value: 'es' },
-      { title: 'En', button: true, value: 'en' }
+      { title: 'Es', button: true, value: 'es', href: '#' },
+      { title: 'En', button: true, value: 'en', href: '#' }
     ]
   }
 ];

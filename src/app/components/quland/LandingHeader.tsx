@@ -1,5 +1,5 @@
 import React from "react";
-import { demoLinkData } from "./data";
+// import { demoLinkData } from "./data";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
@@ -32,7 +32,7 @@ export function LandingHeader() {
             <div className="flex space-x-[30px] items-center">
               <div>
                 <ul className="flex items-center space-x-10">
-                  <li className="group">
+                  {/* <li className="group">
                     <a
                       href="#banner"
                       className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:text-purple before:border-purple transition-all ease-out duration-300 w-fit flex gap-2 items-center"
@@ -90,7 +90,6 @@ export function LandingHeader() {
                             </div>
                           </li>
                         ))}
-                        {/* <!-- single item  --> */}
                         <li className="relative py-1 flex flex-col items-center bg-[#17092D]">
                           <a
                             href=""
@@ -109,6 +108,14 @@ export function LandingHeader() {
                         </li>
                       </ul>
                     </div>
+                  </li> */}
+                  <li>
+                    <a
+                      className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:text-purple before:border-purple transition-all ease-out duration-300 w-fit"
+                      href="#services"
+                    >
+                      {t('navbar.services')}
+                    </a>
                   </li>
                   <li>
                     <a

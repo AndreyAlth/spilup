@@ -3,11 +3,11 @@ import AOS from 'aos';
 import { PageLayout } from './new-layout/PageLayout'
 import { LandingHeader } from '@/app/components/quland/LandingHeader'
 import { Hero } from '@/app/components/quland/Hero'
-import { FeatureSection } from '@/app/components/quland/FeatureSection'
+// import { FeatureSection } from '@/app/components/quland/FeatureSection'
 import { Footer } from 'components/quland/Footer'
-import { TestimonialSection } from 'components/quland/TestimonialSection'
+// import { TestimonialSection } from 'components/quland/TestimonialSection'
 import { FaqSection } from 'components/quland/FaqSection'
-import { Prices} from 'components/quland/Prices'
+// import { Prices} from 'components/quland/Prices'
 import { Services } from 'components/quland/Services'
 import { useEffect } from 'react';
 
@@ -22,11 +22,11 @@ export default function Home() {
         <div className="home---save-dev @types/aosfour relative bg-[#0a0118] w-full overflow-x-hidden">
           <LandingHeader />
           <Hero />
-          <FeatureSection />
+          {/* <FeatureSection /> */}
           <Services />
-          <Prices />
+          {/* <Prices /> */}
           <FaqSection />
-          <TestimonialSection />
+          {/* <TestimonialSection /> */}
           <Footer/>
         </div>
       </PageLayout>

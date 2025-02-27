@@ -11,19 +11,8 @@
     "button": "See more info"
   },
   "services":{
-    "title": "Our services",
-    "web": {
-      "title": "Web Aplications",
-      "content": "We develope web aplications"
-    },
-    "ai": {
-      "title": "Artificial Inteligence",
-      "content": "Implementation of AI models"
-    },
-    "odoo": {
-      "title": "Odoo",
-      "content": "Implementation od Oddo"
-    }
+    "title": "What we do",
+    "subtitle": "We turn ideas into powerful tech tools."
   },
   "contact": {
     "title": "Get in Touch",

@@ -12,18 +12,7 @@
   },
   "services":{
     "title": "Nuestros servicios",
-    "web": {
-      "title": "Desarrollo web",
-      "content": "Desarrollo web a la medida"
-    },
-    "ai": {
-      "title": "Inteligencia Artificial",
-      "content": "Implementación de modelos de inteligencia artificial"
-    },
-    "odoo": {
-      "title": "Odoo",
-      "content": "Desarrollo de sistemas Odoo"
-    }
+    "subtitle": "Transformamos tus ideas en herramientas poderosas"
   },
   "contact": {
     "title": "Contáctanos",

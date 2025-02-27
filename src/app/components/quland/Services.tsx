@@ -1,7 +1,9 @@
 "use client"; 
 import React from "react";
+import { useTranslation } from 'react-i18next'
 
 export function Services() {
+  const { t } = useTranslation()
   return (
     <section id="services">
       <div className="w-full what-we-do-wrapper pb-16 md:pb-[130px] relative overflow-x-hidden">
@@ -10,12 +12,11 @@ export function Services() {
             <div className="flex justify-center w-full title-area">
               <div className="flex flex-col items-center">
                 <div className="mb-5 section-title-top-tag-two">
-                  <span>What We Do</span>
+                  <span>{t('services.title')}</span>
                 </div>
                 <div className="mb-[70px]">
                   <h2 className="font-semibold text-center text-white text-24 sm:text-48">
-                    Generate AI Copy writing <br />
-                    Favorite Tools
+                    {t('services.subtitle')}
                   </h2>
                 </div>
               </div>

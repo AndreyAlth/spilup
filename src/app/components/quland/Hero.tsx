@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import GLightbox from "glightbox";
+// import GLightbox from "glightbox";
 import Link from "next/link";
 
 export function Hero() {
@@ -62,14 +62,14 @@ export function Hero() {
 
   if (typeof window === "undefined") return null;
 
-  useEffect(() => {
-    let lightbox = GLightbox({
-      // Optional GLightbox configuration options
-      selector: ".video-play-btn",
-      touchNavigation: true,
-      loop: false,
-    });
-  }, []);
+  // useEffect(() => {
+  //   let lightbox = GLightbox({
+  //     // Optional GLightbox configuration options
+  //     selector: ".video-play-btn",
+  //     touchNavigation: true,
+  //     loop: false,
+  //   });
+  // }, []);
   
   return (
     <>

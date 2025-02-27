@@ -45,7 +45,6 @@ export const MobileHeader = () => {
   const [activeSubNav, setActiveSubNav] = useState(null);
   const navRef = useRef(null);
   const overlayRef = useRef<HTMLDivElement>(null);
-  const toggleMenuRef = useRef(null);
 
   const toggleNav = () => {
     setIsNavActive(prev => !prev);

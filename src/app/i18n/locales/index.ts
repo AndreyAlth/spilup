@@ -1,1 +1,2 @@
-export * from './en.json'
+import en from './en.json';
+export { en };

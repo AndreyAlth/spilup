@@ -1,40 +1,42 @@
 "use client"
 import React, { useEffect, useRef } from "react";
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
 // import GLightbox from "glightbox";
 import Link from "next/link";
+import { useTranslation } from 'react-i18next'
 
 export function Hero() {
-  const swiperOptions = {
-    modules: [Autoplay],
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: false,
-    navigation: false,
-    breakpoints: {
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 5,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: 50,
-      },
-    },
-  };
+  // const swiperOptions = {
+  //   modules: [Autoplay],
+  //   slidesPerView: 3,
+  //   spaceBetween: 30,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  //   },
+  //   pagination: false,
+  //   navigation: false,
+  //   breakpoints: {
+  //     640: {
+  //       slidesPerView: 4,
+  //       spaceBetween: 20,
+  //     },
+  //     768: {
+  //       slidesPerView: 5,
+  //       spaceBetween: 40,
+  //     },
+  //     1024: {
+  //       slidesPerView: 6,
+  //       spaceBetween: 50,
+  //     },
+  //   },
+  // };
   const bannerRef = useRef(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const perspectiveValue = 20; // Initial perspective value
+  const { t } = useTranslation()
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -73,7 +75,7 @@ export function Hero() {
   
   return (
     <>
-      <section id="banner" className="w-full">
+      <section id="banner" className="w-full mb-10">
         <div className="absolute top-0 z-0 left-32">
           <img src="/assets/images/home-four/hero-shape-2.webp" alt="" />
         </div>
@@ -82,22 +84,20 @@ export function Hero() {
             <div className="flex justify-center mt-[130px] xl:mt-[247px]">
               <div>
                 <h1 className="text-24 sm:text-48 md:text-[75px] md:leading-[95px] font-semibold text-white text-center mb-7 md:mb-[60px] w-full max-w-[844px] mx-auto">
-                  Empowering Intelligence Through
-                  <span className="text-purple">AI Software</span>
+                  {t('hero.title')}
+                  <span className="text-purple mx-5">Odoo, AI y Bots</span>
                 </h1>
                 <div className="flex justify-center mb-5 md:mb-[55px] w-full">
                   <p className="text-white sm:text-18 font-medium text-center w-full max-w-[750px]">
-                    Introducing our groundbreaking AI software, designed to
-                    revolutionize the way businesses operate in the digital age.
-                    Our AI software combines cutting-edge algorithms
+                  {t('hero.subtitle')}
                   </p>
                 </div>
                 <div className="flex justify-center mb-[100px]">
                   <div className="flex flex-col items-center gap-10 md:flex-row">
-                    <Link href="/pricing">
+                    <Link href="#services">
                       <div className="home-two-btn-bg py-3.5 group h4_contact_bg border-transparent w-fit mt-2.5">
                         <span className="relative z-10 text-white transition-all duration-300 text-pone group-hover:text-purple font-inter">
-                          Start Free Trial
+                          {t('hero.button')}
                         </span>
                         <svg
                           className="relative z-10"
@@ -118,7 +118,7 @@ export function Hero() {
                         </svg>
                       </div>
                     </Link>
-                    <a
+                    {/* <a
                       href="https://www.youtube-nocookie.com/embed/JdqL89ZZwFw?si=jnriuBsR3pv2EoUa"
                       aria-label="play-video"
                       className="flex items-center space-x-8 video-play-btn"
@@ -145,7 +145,7 @@ export function Hero() {
                       <span className="font-semibold text-white border-b border-white">
                         How IT Works
                       </span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div
@@ -171,7 +171,7 @@ export function Hero() {
                 </div>
               </div>
             </div>
-            <div className="w-full pt-10 md:pt-32">
+            {/* <div className="w-full pt-10 md:pt-32">
               <h1 className="w-full font-medium text-center text-white">
                 We’ve more then 1250+ global clients
               </h1>
@@ -236,7 +236,7 @@ export function Hero() {
                   </div>
                 </SwiperSlide>
               </Swiper>
-            </div>
+            </div> */}
           </div>
           <div className="absolute right-[137px] top-[260px]">
             <img src="/assets/images/home-four/hero-shape-3.webp" alt="" />

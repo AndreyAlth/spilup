@@ -6,14 +6,9 @@
     "lenguage": "Idioma"
   },
   "hero": {
-    "title": "Soluciones Inovadoras",
-    "subtitle": "Transformamos tus idea en aplicaciones web",
-    "button": "Comenzar",
-    "seccion": {
-      "web": "Desarrollo de aplicaciones web a la medida",
-      "ai": "Implementación de modelos de inteligencia artificial",
-      "oddo": "Implementación de sistemas Odoo"
-    }
+    "title": "Transformamos tus procesos con",
+    "subtitle": "Desde automatización hasta soluciones personalizadas, llevamos tu empresa al siguiente nivel con tecnología a la medida.",
+    "button": "Ver más info"
   },
   "services":{
     "title": "Nuestros servicios",

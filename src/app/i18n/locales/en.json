@@ -6,14 +6,9 @@
     "lenguage": "Language"
   },
   "hero": {
-    "title": "Innovative Solutions",
-    "subtitle": "We transform ideas into web applications",
-    "button": "Get Started",
-    "seccion": {
-      "web": "We develope web aplications",
-      "ai": "Implementación of AI models",
-      "odoo": "Implementation Oddo"
-    }
+    "title": "We transform your  business processes with",
+    "subtitle": "From automation to custom solutions, we take your business to the next level with tailor-made technology.",
+    "button": "See more info"
   },
   "services":{
     "title": "Our services",

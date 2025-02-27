@@ -4,11 +4,11 @@ import { PageLayout } from './new-layout/PageLayout'
 import { LandingHeader } from '@/app/components/quland/LandingHeader'
 import { Hero } from '@/app/components/quland/Hero'
 // import { FeatureSection } from '@/app/components/quland/FeatureSection'
-import { Footer } from 'components/quland/Footer'
+import { Footer } from 'components/quland/FooterLanding'
 // import { TestimonialSection } from 'components/quland/TestimonialSection'
-import { FaqSection } from 'components/quland/FaqSection'
+// import { FaqSection } from 'components/quland/FaqSection'
 // import { Prices} from 'components/quland/Prices'
-import { Services } from 'components/quland/Services'
+// import { Services } from 'components/quland/Services'
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -23,9 +23,9 @@ export default function Home() {
           <LandingHeader />
           <Hero />
           {/* <FeatureSection /> */}
-          <Services />
+          {/* <Services /> */}
           {/* <Prices /> */}
-          <FaqSection />
+          {/* <FaqSection /> */}
           {/* <TestimonialSection /> */}
           <Footer/>
         </div>

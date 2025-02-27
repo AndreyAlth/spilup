@@ -14,6 +14,13 @@
     "title": "What we do",
     "subtitle": "We turn ideas into powerful tech tools."
   },
+  "footer-cta": {
+    "title": "AI Bots & Smart Agents",
+    "subtitle": "We develop bots and intelligent agents tailored to your needs.",
+    "info": "Start now",
+    "button": "See more info"
+
+  },
   "contact": {
     "title": "Get in Touch",
     "form": {

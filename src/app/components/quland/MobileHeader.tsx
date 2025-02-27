@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import { message } from 'config/whatapp'
 
 const menuData = [
   {
@@ -185,7 +186,7 @@ export const MobileHeader = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-5 pl-5 mt-5">
-            <Link href="/contact">
+            <Link href={message.contact}>
               <div className="home-two-btn-bg py-2.5 group bg-blue-seo border-blue-seo w-fit">
                 <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-blue-seo font-inter">
                   {t('navbar.contact')}

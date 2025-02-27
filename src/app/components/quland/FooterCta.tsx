@@ -1,9 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import Parallax from "parallax-js";
 import Link from "next/link";
+import { useTranslation } from 'react-i18next'
+import { message } from 'config/whatapp'
 
 export default function FooterCta() {
   const sceneRef = useRef(null);
+  const { t } = useTranslation()
 
   useEffect(() => {
     if (sceneRef.current) {
@@ -20,21 +23,21 @@ export default function FooterCta() {
         <div className="grid grid-cols-6 gap-5 md:grid-cols-10 h4-cta-bg rounded-xl py-10 md:py-[70px] px-5 md:px-[110px] relative">
           <div className="relative z-10 col-span-6">
             <div className="px-5 py-0.5 font-medium text-white rounded-[30px] border border-white/10 mb-5 w-fit bg-main-gray/5">
-              <span>Get Consultations</span>
+              <span>{t('footer-cta.title')}</span>
             </div>
             <div className="mb-6">
               <h2 className="text-white font-semibold text-24 sm:text-48 max-w-[449px]">
-                AI Generate Content in One Seconds
+              {t('footer-cta.subtitle')}
               </h2>
             </div>
             <p className="mb-10 text-white text-18">
-              No credit card required, 10+ tools to explore
+            {t('footer-cta.info')}
             </p>
 
-            <Link href="/pricing" className="">
+            <Link href={message.bots} className="">
               <div className="group w-fit bg-white px-10 h-[56px] flex justify-center items-center gap-2.5 rounded-[40px] relative price_button_bg before:inline-block before:absolute before:w-full before:h-full before:scale-x-0 hover:before:scale-x-100 overflow-hidden before:transition-transform before:ease-out before:duration-300 before:origin-right hover:before:origin-left before:z-0">
                 <span className="relative z-10 font-semibold transition-all duration-300 font-inter text-purple group-hover:text-white">
-                  Start Free Trial
+                {t('footer-cta.button')}
                 </span>
                 <svg
                   className="relative z-10"

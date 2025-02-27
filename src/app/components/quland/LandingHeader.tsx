@@ -2,6 +2,7 @@ import React from "react";
 // import { demoLinkData } from "./data";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { message } from 'config/whatapp'
 
 export function LandingHeader() {
   const { i18n, t } = useTranslation()
@@ -165,7 +166,7 @@ export function LandingHeader() {
                   </li>
                 </ul>
               </div>
-              <Link href="/contact">
+              <Link href={message.contact}>
                 <div className="home-two-btn-bg py-2.5 group bg-purple border-purple">
                   <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-purple font-inter">
                     {t('navbar.contact')}

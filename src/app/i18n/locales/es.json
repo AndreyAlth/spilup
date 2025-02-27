@@ -14,6 +14,13 @@
     "title": "Nuestros servicios",
     "subtitle": "Transformamos tus ideas en herramientas poderosas"
   },
+  "footer-cta": {
+    "title": "Bots & Agentes AI",
+    "subtitle": "Desarrollamos Bots y agentes inteligentes a tus necesidades",
+    "info": "Comienza ahora",
+    "button": "Ver más info"
+
+  },
   "contact": {
     "title": "Contáctanos",
     "form": {

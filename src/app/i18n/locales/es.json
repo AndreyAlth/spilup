@@ -2,11 +2,8 @@
   "navbar": {
     "services": "Servicios",
     "portfolio": "Portafolio",
-    "contact": "Contacto",
-    "select": {
-      "en": "Ingles",
-      "es": "Español"
-    }
+    "contact": "Contáctanos",
+    "lenguage": "Idioma"
   },
   "hero": {
     "title": "Soluciones Inovadoras",

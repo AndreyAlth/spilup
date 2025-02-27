@@ -1,18 +1,15 @@
 import React from "react";
 import { demoLinkData } from "./data";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export function LandingHeader() {
-  const pagesLinkData = [
-    {
-      linkLabel: "Es",
-      pageLink: "/projects",
-    },
-    {
-      linkLabel: "En",
-      pageLink: "/project-details",
-    }
-  ];
+  const { i18n, t } = useTranslation()
+
+  const changeLen = (len:string) => {
+    i18n.changeLanguage(len)
+  }
+
   return (
     <header>
       <div className="header-wrapper w-full fixed left-0 top-0 z-20 bg-[#0A0118] xl:block hidden">
@@ -22,21 +19,25 @@ export function LandingHeader() {
               <div>
                 <Link href="#">
                   <div className="flex flex-row">
-                    <img src="/assets/icons/logo_color_1.svg" alt="logo" width={45}/>
-                    <img src="/assets/icons/nombre.svg" alt="" width={100}/>
+                    <img
+                      src="/assets/icons/logo_color_1.svg"
+                      alt="logo"
+                      width={45}
+                    />
+                    <img src="/assets/icons/nombre.svg" alt="" width={100} />
                   </div>
                 </Link>
               </div>
             </div>
             <div className="flex space-x-[30px] items-center">
-            <div>
+              <div>
                 <ul className="flex items-center space-x-10">
                   <li className="group">
                     <a
                       href="#banner"
                       className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:text-purple before:border-purple transition-all ease-out duration-300 w-fit flex gap-2 items-center"
                     >
-                      Services
+                      {t('navbar.services')}
                       <svg
                         className="transition-all duration-300 group-hover:rotate-180"
                         width="10"
@@ -70,7 +71,7 @@ export function LandingHeader() {
                                     </span>
                                   </div>
                                 </Link>
-                                <Link href={item.demoLink} >
+                                <Link href={item.demoLink}>
                                   <div className="home-two-btn-white-rev group/btn px-10 py-1.5 before:bg-purple after:bg-purple border-white hover:border-purple">
                                     <span className="text-sm text-white transition-all duration-300 font-semibold font-inter relative z-10 py-0.5">
                                       Multi page
@@ -122,7 +123,7 @@ export function LandingHeader() {
                       className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:text-purple before:border-purple transition-all ease-out duration-300 w-fit flex gap-2 items-center"
                       href="#"
                     >
-                      Lenguage
+                      {t('navbar.lenguage')}
                       <svg
                         className="transition-all duration-300 group-hover:rotate-180"
                         width="10"
@@ -142,16 +143,16 @@ export function LandingHeader() {
                     </a>
                     <div className="absolute px-2 -left-7 h-0 group-hover:h-[480px] overflow-hidden top-5 transition-all duration-700 ">
                       <ul className="max-h-fit min-w-[200px] mt-8 transition-all duration-300 overflow-hidden px-5 top-20 pb-4 rounded-b-md bg-[#0A0118] group-hover:border-b group-hover:border-r group-hover:border-l border-[#231b2f]">
-                        {pagesLinkData.map((item, index) => (
-                          <li key={index} className="relative py-1">
-                            <Link
-                              className="relative font-medium leading-5 home-two-nav-item hover:text-purple w-fit text-paragraph font-inter"
-                              href={item.pageLink}
-                            >
-                              {item.linkLabel}
-                            </Link>
-                          </li>
-                        ))}
+                        <li key={1} className="relative py-1">
+                          <button className="relative font-medium leading-5 home-two-nav-item hover:text-purple w-fit text-paragraph font-inter" onClick={() => changeLen('en')}>
+                            En
+                          </button>
+                        </li>
+                        <li key={1} className="relative py-1">
+                          <button className="relative font-medium leading-5 home-two-nav-item hover:text-purple w-fit text-paragraph font-inter" onClick={() => changeLen('es')}>
+                            Es
+                          </button>
+                        </li>
                       </ul>
                     </div>
                   </li>
@@ -160,7 +161,7 @@ export function LandingHeader() {
               <Link href="/contact">
                 <div className="home-two-btn-bg py-2.5 group bg-purple border-purple">
                   <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-purple font-inter">
-                    Contact US
+                    {t('navbar.contact')}
                   </span>
                   <svg
                     className="relative z-10"

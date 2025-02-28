@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { AppWindow } from 'lucide-react';
+import { AppWindow, Captions, Bot, BotMessageSquare, AudioLines } from 'lucide-react';
 
 interface CardProps {
   icon?: any;
@@ -34,8 +34,32 @@ export function Services() {
   const services_list = [
     {
       id: 1,
-      icon: <AppWindow stroke='white'/>,
+      icon: <AppWindow size={45} stroke='white' strokeWidth={1}/>,
       title: `Aplicaciones CRUD`,
+      subtitle: `aplicaciones crud hechas a la medida`
+    },
+    {
+      id: 2,
+      icon: <Captions size={45} stroke='white' strokeWidth={1}/>,
+      title: `Sistema de transcripciones`,
+      subtitle: `aplicaciones crud hechas a la medida`
+    },
+    {
+      id: 3,
+      icon: <Bot size={45} stroke='white' strokeWidth={1}/>,
+      title: `Bots`,
+      subtitle: `aplicaciones crud hechas a la medida`
+    },
+    {
+      id: 4,
+      icon: <BotMessageSquare size={45} stroke='white' strokeWidth={1}/>,
+      title: `Agentes AI`,
+      subtitle: `aplicaciones crud hechas a la medida`
+    },
+    {
+      id: 5,
+      icon: <AudioLines size={45} stroke='white' strokeWidth={1}/>,
+      title: `Sistema de reconocimiento de voz`,
       subtitle: `aplicaciones crud hechas a la medida`
     }
   ];
@@ -67,167 +91,6 @@ export function Services() {
                   {service.icon}
                 </Card>
               ))}
-              {/* <div
-                data-aos="fade-left"
-                className="service-item p-5 md:p-[50px] relative group"
-              >
-                <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-7">
-                  <img
-                    src="/assets/images/home-four/wt-ico-1.webp"
-                    alt=""
-                    className="relative z-10"
-                  />
-                </div>
-                <h1 className="mb-5 font-medium text-white">
-                  Natural Language Processing <br />
-                  (NLP) Platforms Solutions
-                </h1>
-                <p className="text-white opacity-55">
-                  NLP services enable computers underst interpret generate human
-                  language there used for sentiment analysis
-                </p>
-                <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition duration-300 ease-in-out opacity-0 circle-shape group-hover:opacity-100">
-                  <img
-                    src="/assets/images/home-four/service-circle-shape.webp"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-delay="100"
-                className="service-item p-5 md:p-[50px] relative group"
-              >
-                <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-[28px]">
-                  <img
-                    src="/assets/images/home-four/wt-ico-2.webp"
-                    alt=""
-                    className="relative z-10"
-                  />
-                </div>
-                <h1 className="mb-5 font-medium text-white">
-                  Natural Language Processing <br />
-                  (NLP) Platforms Solutions
-                </h1>
-                <p className="text-white opacity-55">
-                  NLP services enable computers underst interpret generate human
-                  language there used for sentiment analysis
-                </p>
-                <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition duration-300 ease-in-out opacity-0 circle-shape group-hover:opacity-100">
-                  <img
-                    src="/assets/images/home-four/service-circle-shape.webp"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-delay="200"
-                className="service-item p-5 md:p-[50px] relative group"
-              >
-                <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-[28px]">
-                  <img
-                    src="/assets/images/home-four/wt-ico-3.webp"
-                    alt=""
-                    className="relative z-10"
-                  />
-                </div>
-                <h1 className="mb-5 font-medium text-white">
-                  Natural Language Processing <br />
-                  (NLP) Platforms Solutions
-                </h1>
-                <p className="text-white opacity-55">
-                  NLP services enable computers underst interpret generate human
-                  language there used for sentiment analysis
-                </p>
-                <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition duration-300 ease-in-out opacity-0 circle-shape group-hover:opacity-100">
-                  <img
-                    src="/assets/images/home-four/service-circle-shape.webp"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-delay="300"
-                className="service-item p-5 md:p-[50px] relative group"
-              >
-                <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-[28px]">
-                  <img
-                    src="/assets/images/home-four/wt-ico-4.webp"
-                    alt=""
-                    className="relative z-10"
-                  />
-                </div>
-                <h1 className="mb-5 font-medium text-white">
-                  Natural Language Processing <br />
-                  (NLP) Platforms Solutions
-                </h1>
-                <p className="text-white opacity-55">
-                  NLP services enable computers underst interpret generate human
-                  language there used for sentiment analysis
-                </p>
-                <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition duration-300 ease-in-out opacity-0 circle-shape group-hover:opacity-100">
-                  <img
-                    src="/assets/images/home-four/service-circle-shape.webp"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-delay="400"
-                className="service-item p-5 md:p-[50px] relative group"
-              >
-                <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-[28px]">
-                  <img
-                    src="/assets/images/home-four/wt-ico-5.webp"
-                    alt=""
-                    className="relative z-10"
-                  />
-                </div>
-                <h1 className="mb-5 font-medium text-white">
-                  Natural Language Processing <br />
-                  (NLP) Platforms Solutions
-                </h1>
-                <p className="text-white opacity-55">
-                  NLP services enable computers underst interpret generate human
-                  language there used for sentiment analysis
-                </p>
-                <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition duration-300 ease-in-out opacity-0 circle-shape group-hover:opacity-100">
-                  <img
-                    src="/assets/images/home-four/service-circle-shape.webp"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-delay="500"
-                className="service-item p-5 md:p-[50px] relative group"
-              >
-                <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-[28px]">
-                  <img
-                    src="/assets/images/home-four/wt-ico-6.webp"
-                    alt=""
-                    className="relative z-10"
-                  />
-                </div>
-                <h1 className="mb-5 font-medium text-white">
-                  Natural Language Processing <br />
-                  (NLP) Platforms Solutions
-                </h1>
-                <p className="text-white opacity-55">
-                  NLP services enable computers underst interpret generate human
-                  language there used for sentiment analysis
-                </p>
-                <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition duration-300 ease-in-out opacity-0 circle-shape group-hover:opacity-100">
-                  <img
-                    src="/assets/images/home-four/service-circle-shape.webp"
-                    alt=""
-                  />
-                </div>
-              </div> */}
             </div>
           </div>
         </div>

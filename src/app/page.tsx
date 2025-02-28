@@ -8,7 +8,7 @@ import { Footer } from 'components/quland/FooterLanding'
 // import { TestimonialSection } from 'components/quland/TestimonialSection'
 // import { FaqSection } from 'components/quland/FaqSection'
 // import { Prices} from 'components/quland/Prices'
-// import { Services } from 'components/quland/Services'
+import { Services } from 'components/quland/Services'
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
           <LandingHeader />
           <Hero />
           {/* <FeatureSection /> */}
-          {/* <Services /> */}
+          <Services />
           {/* <Prices /> */}
           {/* <FaqSection /> */}
           {/* <TestimonialSection /> */}

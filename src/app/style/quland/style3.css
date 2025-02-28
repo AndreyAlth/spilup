@@ -943,9 +943,14 @@ h6 {
   transition: all 0.3s ease-in-out;
   background: linear-gradient(94.31deg, #794aff 5.85%, #1904e5 95.44%);
 }
-.what-we-do-wrapper .service-item:hover .service-item-ico::before {
+/* .what-we-do-wrapper .service-item:hover .service-item-ico::before {
+  opacity: 1;
+} */
+
+.what-we-do-wrapper {
   opacity: 1;
 }
+
 .what-we-do-wrapper .service-item::before {
   content: "";
   display: block;

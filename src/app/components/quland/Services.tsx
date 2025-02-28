@@ -1,9 +1,45 @@
-"use client"; 
-import React from "react";
-import { useTranslation } from 'react-i18next'
+'use client';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { AppWindow } from 'lucide-react';
+
+interface CardProps {
+  icon?: any;
+  title: string;
+  subtitle: string;
+  children:any
+}
+
+const Card = ({ title, subtitle, children }: CardProps) => {
+  return (
+    <div
+      data-aos="fade-left"
+      className="service-item p-5 md:p-[50px] relative group"
+    >
+      <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-7">
+        {children}
+      </div>
+      <h1 className="mb-5 font-medium text-white">{title}</h1>
+      <p className="text-white opacity-55">{subtitle}</p>
+      <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition duration-300 ease-in-out opacity-0 circle-shape group-hover:opacity-100">
+        <img src="/assets/images/home-four/service-circle-shape.webp" alt="" />
+      </div>
+    </div>
+  );
+};
 
 export function Services() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
+
+  const services_list = [
+    {
+      id: 1,
+      icon: <AppWindow stroke='white'/>,
+      title: `Aplicaciones CRUD`,
+      subtitle: `aplicaciones crud hechas a la medida`
+    }
+  ];
+
   return (
     <section id="services">
       <div className="w-full what-we-do-wrapper pb-16 md:pb-[130px] relative overflow-x-hidden">
@@ -22,7 +58,16 @@ export function Services() {
               </div>
             </div>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-              <div
+              {services_list.map(service => (
+                <Card
+                  key={service.id}
+                  title={service.title}
+                  subtitle={service.subtitle}
+                >
+                  {service.icon}
+                </Card>
+              ))}
+              {/* <div
                 data-aos="fade-left"
                 className="service-item p-5 md:p-[50px] relative group"
               >
@@ -182,7 +227,7 @@ export function Services() {
                     alt=""
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

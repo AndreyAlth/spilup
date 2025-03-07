@@ -29,5 +29,23 @@
       "message": "Message",
       "submit": "Send"
     }
-  }
+  },
+  "services_list": {
+    "custom_soft": {
+        "title": "Custom Software",
+        "subtitle": "We develop custom solutions to fit your needs."
+    },
+    "transcripcion": {
+        "title": "Transcription System",
+        "subtitle": "Convert audio to text with high accuracy and speed."
+    },
+    "voiceprint": {
+        "title": "Voice Recognition System",
+        "subtitle": "Identify and verify speakers by their voice."
+    },
+    "agents": {
+        "title": "AI Agents",
+        "subtitle": "Automate tasks and processes with intelligent agents."
+    }
+}
 }

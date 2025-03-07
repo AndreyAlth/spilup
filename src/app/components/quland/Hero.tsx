@@ -85,7 +85,7 @@ export function Hero() {
               <div>
                 <h1 className="text-24 sm:text-48 md:text-[75px] md:leading-[95px] font-semibold text-white text-center mb-7 md:mb-[60px] w-full max-w-[844px] mx-auto">
                   {t('hero.title')}
-                  <span className="text-purple mx-5">Odoo, AI y Bots</span>
+                  <span className="text-purple mx-5">Custom Software, AI y Bots</span>
                 </h1>
                 <div className="flex justify-center mb-5 md:mb-[55px] w-full">
                   <p className="text-white sm:text-18 font-medium text-center w-full max-w-[750px]">

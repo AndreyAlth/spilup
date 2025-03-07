@@ -4,19 +4,7 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { message } from 'config/whatapp'
 
-const menuData = [
-  {
-    title: 'navbar.services', href: '/'
-  },
-  { title: 'FAQ', href: '/about' },
-  {
-    title: 'navbar.lenguage',
-    subMenu: [
-      { title: 'Es', button: true, value: 'es', href: '#' },
-      { title: 'En', button: true, value: 'en', href: '#' }
-    ]
-  }
-];
+
 
 export const MobileHeader = () => {
   const [isNavActive, setIsNavActive] = useState(false);
@@ -36,6 +24,20 @@ export const MobileHeader = () => {
   const toggleSubNav = (index: any) => {
     setActiveSubNav(prev => (prev === index ? null : index));
   };
+
+  const menuData = [
+    {
+      title: t('navbar.services'), href: '#services'
+    },
+    // { title: 'FAQ', href: '/about' },
+    {
+      title: t('navbar.lenguage'),
+      subMenu: [
+        { title: 'Es', button: true, value: 'es', href: '#' },
+        { title: 'En', button: true, value: 'en', href: '#' }
+      ]
+    }
+  ];
 
   useEffect(() => {
     const handleOverlayClick = () => {

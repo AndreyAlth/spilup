@@ -118,14 +118,14 @@ export function LandingHeader() {
                       {t('navbar.services')}
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:text-purple before:border-purple transition-all ease-out duration-300 w-fit"
                       href="#faq"
                     >
                       Faq
                     </a>
-                  </li>
+                  </li> */}
                   <li className="relative group">
                     <a
                       className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:text-purple before:border-purple transition-all ease-out duration-300 w-fit flex gap-2 items-center"

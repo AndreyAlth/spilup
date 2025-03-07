@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { AppWindow, Captions, Bot, BotMessageSquare, AudioLines } from 'lucide-react';
+import { AppWindow, Captions, BotMessageSquare, AudioLines } from 'lucide-react';
 
 interface CardProps {
   icon?: any;
@@ -35,32 +35,26 @@ export function Services() {
     {
       id: 1,
       icon: <AppWindow size={45} stroke='white' strokeWidth={1}/>,
-      title: `Aplicaciones CRUD`,
-      subtitle: `aplicaciones crud hechas a la medida`
+      title: t('services_list.custom_soft.title'),
+      subtitle: t('services_list.custom_soft.subtitle')
     },
     {
       id: 2,
       icon: <Captions size={45} stroke='white' strokeWidth={1}/>,
-      title: `Sistema de transcripciones`,
-      subtitle: `aplicaciones crud hechas a la medida`
+      title: t('services_list.transcripcion.title'),
+      subtitle: t('services_list.transcripcion.subtitle')
     },
     {
       id: 3,
-      icon: <Bot size={45} stroke='white' strokeWidth={1}/>,
-      title: `Bots`,
-      subtitle: `aplicaciones crud hechas a la medida`
+      icon: <AudioLines size={45} stroke='white' strokeWidth={1}/>,
+      title: t('services_list.voiceprint.title'),
+      subtitle: t('services_list.voiceprint.subtitle')
     },
     {
       id: 4,
       icon: <BotMessageSquare size={45} stroke='white' strokeWidth={1}/>,
-      title: `Agentes AI`,
-      subtitle: `aplicaciones crud hechas a la medida`
-    },
-    {
-      id: 5,
-      icon: <AudioLines size={45} stroke='white' strokeWidth={1}/>,
-      title: `Sistema de reconocimiento de voz`,
-      subtitle: `aplicaciones crud hechas a la medida`
+      title: t('services_list.agents.title'),
+      subtitle: t('services_list.agents.subtitle')
     }
   ];
 

@@ -1,7 +1,9 @@
+"use client";
 import { useEffect } from 'react';
 import ReactPixel from 'react-facebook-pixel';
 
-export const PixelTracker = () => {
+const PixelTracker = () => {
+    console.log(process.env.NEXT_PUBLIC_PIXEL_ID);
   useEffect(() => {
     const pixelId = process.env.NEXT_PUBLIC_PIXEL_ID;
     ReactPixel.init(pixelId);
@@ -9,3 +11,5 @@ export const PixelTracker = () => {
   }, []);
   return null;
 };
+
+export default PixelTracker;

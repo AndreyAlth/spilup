@@ -2,7 +2,6 @@
 import React from 'react';
 import { Code } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import i18n from '../i18n/i18Config';
 import { SelectInput } from '@/app/components/ui/Select'
 
 export const Header = () => {

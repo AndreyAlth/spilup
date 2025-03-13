@@ -2,36 +2,23 @@
   "navbar": {
     "services": "Servicios",
     "portfolio": "Portafolio",
-    "contact": "Contacto",
-    "select": {
-      "en": "Ingles",
-      "es": "Español"
-    }
+    "contact": "Contáctanos",
+    "lenguage": "Idioma"
   },
   "hero": {
-    "title": "Soluciones Inovadoras",
-    "subtitle": "Transformamos tus idea en aplicaciones web",
-    "button": "Comenzar",
-    "seccion": {
-      "web": "Desarrollo de aplicaciones web a la medida",
-      "ai": "Implementación de modelos de inteligencia artificial",
-      "oddo": "Implementación de sistemas Odoo"
-    }
+    "title": "Transformamos tus procesos con",
+    "subtitle": "Desde automatización hasta soluciones personalizadas, llevamos tu empresa al siguiente nivel con tecnología a la medida.",
+    "button": "Ver más info"
   },
-  "services":{
+  "services": {
     "title": "Nuestros servicios",
-    "web": {
-      "title": "Desarrollo web",
-      "content": "Desarrollo web a la medida"
-    },
-    "ai": {
-      "title": "Inteligencia Artificial",
-      "content": "Implementación de modelos de inteligencia artificial"
-    },
-    "odoo": {
-      "title": "Odoo",
-      "content": "Desarrollo de sistemas Odoo"
-    }
+    "subtitle": "Transformamos tus ideas en herramientas poderosas"
+  },
+  "footer-cta": {
+    "title": "Bots & Agentes AI",
+    "subtitle": "Desarrollamos Bots y agentes inteligentes a tus necesidades",
+    "info": "Comienza ahora",
+    "button": "Ver más info"
   },
   "contact": {
     "title": "Contáctanos",
@@ -41,5 +28,26 @@
       "message": "Mensaje",
       "submit": "Enviar"
     }
+  },
+  "services_list": {
+    "custom_soft": {
+      "title": "Software a la medida",
+      "subtitle": "Desarrollamos soluciones personalizadas según tus necesidades."
+    },
+    "transcripcion": {
+      "title": "Sistema de transcripciones",
+      "subtitle": "Convierte audio en texto con alta precisión y rapidez."
+    },
+    "voiceprint": {
+      "title": "Sistema de reconocimiento de voz",
+      "subtitle": "Identifica y verifica hablantes por su voz."
+    },
+    "agents": {
+      "title": "Agentes AI",
+      "subtitle": "Automatiza tareas y procesos con agentes inteligentes."
+    }
+  },
+  "footer": {
+    "desc": "Somos una empresa de desarrollo de software y soluciones de inteligencia artificial, creando herramientas personalizadas que optimizan procesos, automatizan tareas y potencian negocios con tecnología AI"
   }
 }

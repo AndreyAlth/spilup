@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('./style/radix/index.css');
+@import url('./style/quland/style3.css');
+@import url('./style/quland/index.css');
+@import url('../../node_modules/glightbox/dist/css/glightbox.min.css');
+@import url('../../node_modules/swiper/swiper-bundle.css');
+@import url('../../node_modules/swiper/swiper.css');
+@import url('../../node_modules/aos/dist/aos.css');
 
 /* body{
   background-color: gray;
 } */
 
-.Link {
+/* .Link {
 	padding: 8px 12px;
 	outline: none;
 	user-select: none;
@@ -43,4 +48,4 @@
   .bg-gradient-animate {
 	background-size: 200% 200%;
 	animation: gradientFlow 15s ease infinite;
-  }
+  } */

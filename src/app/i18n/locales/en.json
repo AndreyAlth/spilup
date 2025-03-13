@@ -2,36 +2,23 @@
   "navbar": {
     "services": "Services",
     "portfolio": "Portfolio",
-    "contact": "Contact",
-    "select": {
-      "en": "English",
-      "es": "Spanish"
-    }
+    "contact": "Contact us",
+    "lenguage": "Language"
   },
   "hero": {
-    "title": "Innovative Solutions",
-    "subtitle": "We transform ideas into web applications",
-    "button": "Get Started",
-    "seccion": {
-      "web": "We develope web aplications",
-      "ai": "Implementación of AI models",
-      "odoo": "Implementation Oddo"
-    }
+    "title": "We transform your  business processes with",
+    "subtitle": "From automation to custom solutions, we take your business to the next level with tailor-made technology.",
+    "button": "See more info"
   },
-  "services":{
-    "title": "Our services",
-    "web": {
-      "title": "Web Aplications",
-      "content": "We develope web aplications"
-    },
-    "ai": {
-      "title": "Artificial Inteligence",
-      "content": "Implementation of AI models"
-    },
-    "odoo": {
-      "title": "Odoo",
-      "content": "Implementation od Oddo"
-    }
+  "services": {
+    "title": "What we do",
+    "subtitle": "We turn ideas into powerful tech tools."
+  },
+  "footer-cta": {
+    "title": "AI Bots & Smart Agents",
+    "subtitle": "We develop bots and intelligent agents tailored to your needs.",
+    "info": "Start now",
+    "button": "See more info"
   },
   "contact": {
     "title": "Get in Touch",
@@ -41,5 +28,26 @@
       "message": "Message",
       "submit": "Send"
     }
+  },
+  "services_list": {
+    "custom_soft": {
+      "title": "Custom Software",
+      "subtitle": "We develop custom solutions to fit your needs."
+    },
+    "transcripcion": {
+      "title": "Transcription System",
+      "subtitle": "Convert audio to text with high accuracy and speed."
+    },
+    "voiceprint": {
+      "title": "Voice Recognition System",
+      "subtitle": "Identify and verify speakers by their voice."
+    },
+    "agents": {
+      "title": "AI Agents",
+      "subtitle": "Automate tasks and processes with intelligent agents."
+    }
+  },
+  "footer": {
+    "desc": "We are a software development and AI solutions company, creating custom tools that optimize processes, automate tasks, and empower businesses with AI technology."
   }
 }

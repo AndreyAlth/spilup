@@ -3,11 +3,27 @@ import React, { useEffect, useRef } from 'react';
 import GLightbox from "glightbox";
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'next/navigation';
 
-export function HeroService() {
+interface Service {
+  id: string;
+  title: string;
+  subtitle: string;
+  img_url: string;
+  video_url: string;
+  action_btn: string;
+}
+
+interface HeroServiceProps {
+  services: Service[];
+}
+
+export function HeroService({ services }: HeroServiceProps) {
+  const { service_id } = useParams() as { service_id: string };
+  const service = services?.find((service) => service.id === service_id);
   const imageRef = useRef<HTMLDivElement>(null);
   const perspectiveValue = 20; // Initial perspective value
-  const { t } = useTranslation();
+  const { t } = useTranslation("services");
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -53,7 +69,7 @@ export function HeroService() {
               <div>
                 <h1 className="text-24 sm:text-38 md:text-[48px] md:leading-[75px] font-semibold text-white text-center mb-7 md:mb-[10px] w-full max-w-[1300px] mx-auto">
                   <div className="w-full">
-                    {t('hero.title')}
+                    {t(service?.title)}
                   </div>
                 </h1>
                 <div className="flex justify-center mb-5 md:mb-[55px] w-full">

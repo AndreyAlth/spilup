@@ -1,0 +1,53 @@
+{
+  "navbar": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact us",
+    "lenguage": "Language"
+  },
+  "hero": {
+    "title": "Automate your business processes with",
+    "subtitle": "Transform your tools into automatizations that work 24/7. Learning, integrating and execute complex tasks without manual effort.",
+    "button": "See more info"
+  },
+  "services": {
+    "title": "What we do",
+    "subtitle": "We turn ideas into powerful tech tools."
+  },
+  "footer-cta": {
+    "title": "AI Bots & Smart Agents",
+    "subtitle": "We develop bots and intelligent agents tailored to your needs.",
+    "info": "Start now",
+    "button": "See more info"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
+  },
+  "services_list": {
+    "custom_soft": {
+      "title": "Custom Software",
+      "subtitle": "We develop custom solutions to fit your needs."
+    },
+    "transcripcion": {
+      "title": "Transcription System",
+      "subtitle": "Convert audio to text with high accuracy and speed."
+    },
+    "voiceprint": {
+      "title": "Voice Recognition System",
+      "subtitle": "Identify and verify speakers by their voice."
+    },
+    "agents": {
+      "title": "AI Agents",
+      "subtitle": "Automate tasks and processes with intelligent agents."
+    }
+  },
+  "footer": {
+    "desc": "We are a software development and AI solutions company, creating custom tools that optimize processes, automate tasks, and empower businesses with AI technology."
+  }
+}

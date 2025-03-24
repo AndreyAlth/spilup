@@ -1,0 +1,18 @@
+{
+  "custom_soft": {
+    "title": "Software a la medida",
+    "subtitle": "Desarrollamos soluciones personalizadas según tus necesidades."
+  },
+  "transcripcion": {
+    "title": "Sistema de transcripciones",
+    "subtitle": "Convierte audio en texto con alta precisión y rapidez."
+  },
+  "voiceprint": {
+    "title": "Sistema de reconocimiento de voz",
+    "subtitle": "Identifica y verifica hablantes por su voz."
+  },
+  "agents": {
+    "title": "Agentes AI",
+    "subtitle": "Automatiza tareas y procesos con agentes inteligentes."
+  }
+}

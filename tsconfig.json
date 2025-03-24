@@ -25,6 +25,6 @@
       "types/*": ["./src/app/types/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/(main)/services/[service_id]"],
   "exclude": ["node_modules"]
 }

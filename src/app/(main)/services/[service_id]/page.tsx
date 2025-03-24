@@ -3,15 +3,16 @@
 import { FaqSection } from "@/app/components/quland/FaqSection";
 import { FeatureSection } from "@/app/components/quland/FeatureSection";
 import { HeroService } from "@/app/components/quland/HeroService";
+import { services } from 'config/services'
 
-function Services() {
+function ServicesPage() {
   return (
     <div>
-      <HeroService />
+      <HeroService services={services} />
       <FeatureSection />
       <FaqSection />
     </div>
   );
 }
 
-export default Services;
+export default ServicesPage;

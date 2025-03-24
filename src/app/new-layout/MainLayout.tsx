@@ -1,10 +1,15 @@
 'use client'
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import { PageLayout } from './PageLayout';
 import { LandingHeader } from '../components/quland/LandingHeader';
 import { Footer } from '../components/quland/FooterLanding';
 
 export const MainLayout = ({ children }) => {
+  useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+    }, []);
   return (
     <div>
       <PageLayout>

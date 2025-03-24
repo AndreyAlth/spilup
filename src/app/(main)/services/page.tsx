@@ -1,9 +1,15 @@
-'use client'
+'use client';
+
+import { FaqSection } from "@/app/components/quland/FaqSection";
+import { FeatureSection } from "@/app/components/quland/FeatureSection";
+import { HeroService } from "@/app/components/quland/HeroService";
 
 function Services() {
   return (
     <div>
-      agregar la pagina de servicio
+      <HeroService />
+      <FeatureSection />
+      <FaqSection />
     </div>
   );
 }

@@ -3,8 +3,8 @@ import i18n from 'i18next';
 
 import en from './locales/en.json'
 import es from './locales/es.json'
-import service_es from './locales/services/en.json'
-import service_en from './locales/services/es.json'
+import service_es from './locales/services/es.json'
+import service_en from './locales/services/en.json'
 
 
 export const i18Config = {

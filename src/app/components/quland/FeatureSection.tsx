@@ -1,12 +1,14 @@
 "use client";
 import { Service } from '@/app/types/Services';
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 interface HeroServiceProps {
   service: Service;
 }
 
 export function FeatureSection({ service }: HeroServiceProps) {
+  const { t } = useTranslation('services');
   return (
     <section id="features">
       <div className="feature-section-wrapper w-full py-16 md:py-[130px] mt-8 md:mt-[130px] relative overflow-x-hidden">
@@ -18,7 +20,7 @@ export function FeatureSection({ service }: HeroServiceProps) {
               </div>
               <div className="mb-[50px]">
                 <h2 className="font-semibold text-white text-24 sm:text-48">
-                  {service?.features.title}
+                  {t(service?.features.title)}
                 </h2>
               </div>
               <div className="w-full">
@@ -35,10 +37,10 @@ export function FeatureSection({ service }: HeroServiceProps) {
                       </div>
                       <div className="flex-1">
                         <h3 className="mb-3 font-semibold leading-none text-white text-22">
-                          {feature.title}
+                          {t(feature.title)}
                         </h3>
                         <p className="text-white opacity-50">
-                          {feature.description}
+                          {t(feature.description)}
                         </p>
                       </div>
                     </div>

@@ -1,6 +1,7 @@
 "use client";
 import { Service } from "@/app/types/Services";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface HeroServiceProps {
   service: Service;
@@ -8,6 +9,7 @@ interface HeroServiceProps {
 
 export function FaqSection({ service }: HeroServiceProps) {
   const [activeFAQ, setActiveFAQ] = useState(0);
+  const { t } = useTranslation('services');
 
   const toggleFAQ = (index:any) => {
     setActiveFAQ(activeFAQ === index ? 0 : index);
@@ -38,7 +40,7 @@ export function FaqSection({ service }: HeroServiceProps) {
                   >
                     <div className="flex items-center justify-between w-full pointer-events-none">
                       <h1 className="font-semibold text-white sm:text-18">
-                        {faq.question}
+                        {t(faq.question)}
                       </h1>
                       <svg
                         width="19"
@@ -58,7 +60,7 @@ export function FaqSection({ service }: HeroServiceProps) {
                     </div>
                     {activeFAQ === index && (
                       <p className="mt-3.5 text-white pointer-events-none">
-                        {faq.answer}
+                        {t(faq.answer)}
                       </p>
                     )}
                   </div>

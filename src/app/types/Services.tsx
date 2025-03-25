@@ -1,3 +1,21 @@
+export interface FeatureItem {
+    id: number;
+    title: string;
+    description: string;
+}
+
+export interface Feature {
+  img: string | null;
+  title: string;
+  list: FeatureItem[];
+}
+
+export interface Faq {
+  id: number;
+  question: string;
+  answer: string;
+}
+
 export interface Service {
   id: string;
   title: string;
@@ -7,4 +25,6 @@ export interface Service {
   video_url: string | null;
   btn_text: string | null;
   btn_link: string;
+  features: Feature;
+  faq: Faq[];
 }

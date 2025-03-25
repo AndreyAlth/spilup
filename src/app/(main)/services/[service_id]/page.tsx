@@ -17,7 +17,7 @@ function ServicesPage() {
   return (
     <div>
       <HeroService service={service} />
-      <FeatureSection />
+      <FeatureSection service={service}/>
       <FaqSection />
     </div>
   );

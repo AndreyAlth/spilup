@@ -1,29 +1,6 @@
 "use client";
 import { Service } from "@/app/types/Services";
 import React, { useState } from "react";
-const faqs = [
-  {
-    question: "What factors determine the pricing of SEO services?",
-    answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
-  },
-  {
-    question: "What factors determine the pricing of SEO services?",
-    answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
-  },
-  {
-    question: "What factors determine the pricing of SEO services?",
-    answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
-  },
-  {
-    question: "What factors determine the pricing of SEO services?",
-    answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
-  },
-  // Add more FAQ items here if needed
-];
 
 interface HeroServiceProps {
   service: Service;

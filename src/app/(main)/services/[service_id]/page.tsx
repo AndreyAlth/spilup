@@ -18,7 +18,7 @@ function ServicesPage() {
     <div>
       <HeroService service={service} />
       <FeatureSection service={service}/>
-      <FaqSection />
+      <FaqSection service={service}/>
     </div>
   );
 }

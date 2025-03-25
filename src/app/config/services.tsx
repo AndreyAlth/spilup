@@ -20,9 +20,21 @@ export const services = [
         }
       ]
     },
-    faq: [
+    faqs: [
       {
         id: 1,
+        question: '¿Qué es un CRM?',
+        answer:
+          'Un CRM es un software que te permite gestionar las relaciones con tus clientes.'
+      },
+      {
+        id: 2,
+        question: '¿Qué es un CRM?',
+        answer:
+          'Un CRM es un software que te permite gestionar las relaciones con tus clientes.'
+      },
+      {
+        id: 3,
         question: '¿Qué es un CRM?',
         answer:
           'Un CRM es un software que te permite gestionar las relaciones con tus clientes.'

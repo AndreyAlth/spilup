@@ -26,5 +26,5 @@ export interface Service {
   btn_text: string | null;
   btn_link: string;
   features: Feature;
-  faq: Faq[];
+  faqs: Faq[];
 }

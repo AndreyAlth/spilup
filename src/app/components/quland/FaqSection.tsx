@@ -1,4 +1,5 @@
 "use client";
+import { Service } from "@/app/types/Services";
 import React, { useState } from "react";
 const faqs = [
   {
@@ -24,7 +25,11 @@ const faqs = [
   // Add more FAQ items here if needed
 ];
 
-export function FaqSection() {
+interface HeroServiceProps {
+  service: Service;
+}
+
+export function FaqSection({ service }: HeroServiceProps) {
   const [activeFAQ, setActiveFAQ] = useState(0);
 
   const toggleFAQ = (index:any) => {
@@ -47,7 +52,7 @@ export function FaqSection() {
               </h2>
               <div className="flex flex-col gap-2.5 w-full mt-10 sm:px-4">
                 {/* <!-- faq single start  --> */}
-                {faqs.map((faq, index) => (
+                {service?.faqs.map((faq, index) => (
                   <div
                     key={index}
                     data-aos="fade-up"

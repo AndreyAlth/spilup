@@ -18,6 +18,7 @@ export interface Faq {
 
 export interface Service {
   id: string;
+  icon: any;
   title: string;
   subtitle: string | null;
   img_url: string | null;

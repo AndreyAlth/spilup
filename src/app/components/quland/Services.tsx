@@ -1,62 +1,43 @@
 'use client';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { AppWindow, Captions, BotMessageSquare, AudioLines } from 'lucide-react';
+import { services } from 'config/services';
+import Link from 'next/link';
 
 interface CardProps {
   icon?: any;
+  id: string;
   title: string;
   subtitle: string;
-  children:any
+  children: any;
 }
 
-const Card = ({ title, subtitle, children }: CardProps) => {
+const Card = ({ id, title, subtitle, children }: CardProps) => {
+  const { t } = useTranslation('services');
   return (
-    <div
-      data-aos="fade-left"
-      className="service-item p-5 md:p-[50px] relative group"
-    >
-      <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-7">
-        {children}
+    <Link href={`/services/${id}`}>
+      <div
+        data-aos="fade-left"
+        className="service-item p-5 md:p-[50px] relative group"
+      >
+        <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-7">
+          {children}
+        </div>
+        <h1 className="mb-5 font-medium text-white">{t(title)}</h1>
+        <p className="text-white opacity-55">{t(subtitle)}</p>
+        <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition duration-300 ease-in-out opacity-0 circle-shape group-hover:opacity-100">
+          <img
+            src="/assets/images/home-four/service-circle-shape.webp"
+            alt=""
+          />
+        </div>
       </div>
-      <h1 className="mb-5 font-medium text-white">{title}</h1>
-      <p className="text-white opacity-55">{subtitle}</p>
-      <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full transition duration-300 ease-in-out opacity-0 circle-shape group-hover:opacity-100">
-        <img src="/assets/images/home-four/service-circle-shape.webp" alt="" />
-      </div>
-    </div>
+    </Link>
   );
 };
 
 export function Services() {
   const { t } = useTranslation();
-
-  const services_list = [
-    {
-      id: 1,
-      icon: <AppWindow size={45} stroke='white' strokeWidth={1}/>,
-      title: t('services_list.custom_soft.title'),
-      subtitle: t('services_list.custom_soft.subtitle')
-    },
-    {
-      id: 2,
-      icon: <Captions size={45} stroke='white' strokeWidth={1}/>,
-      title: t('services_list.transcripcion.title'),
-      subtitle: t('services_list.transcripcion.subtitle')
-    },
-    {
-      id: 3,
-      icon: <AudioLines size={45} stroke='white' strokeWidth={1}/>,
-      title: t('services_list.voiceprint.title'),
-      subtitle: t('services_list.voiceprint.subtitle')
-    },
-    {
-      id: 4,
-      icon: <BotMessageSquare size={45} stroke='white' strokeWidth={1}/>,
-      title: t('services_list.agents.title'),
-      subtitle: t('services_list.agents.subtitle')
-    }
-  ];
 
   return (
     <section id="services">
@@ -76,9 +57,10 @@ export function Services() {
               </div>
             </div>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-              {services_list.map(service => (
+              {services.map(service => (
                 <Card
                   key={service.id}
+                  id={service.id}
                   title={service.title}
                   subtitle={service.subtitle}
                 >

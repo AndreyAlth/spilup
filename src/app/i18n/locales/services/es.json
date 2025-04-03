@@ -1,7 +1,22 @@
 {
   "custom_soft": {
     "title": "Software a la medida",
-    "subtitle": "Desarrollamos soluciones personalizadas según tus necesidades."
+    "subtitle": "Desarrollamos soluciones personalizadas según tus necesidades y automatización de procesos.",
+    "video_text": "Ver video",
+    "btn_link": "Más información",
+    "features": {
+      "title": "Software que te ayuda en tus procesos operativos",
+      "1": {
+        "title": "Soporte de Cliente",
+        "description": "Agente especializado para resolver dudas con el producto, quejas y preguntas especializadas con el servicio."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "¿Dónde se aloja el agente?",
+        "answer": "El agente puede estar alojado en la nube o en tu propia infraestructura, en algunos casos, los agentes van a requerir del consumo de APIS"
+      }
+    }
   },
   "transcripcion": {
     "title": "Sistema de transcripciones",
@@ -13,24 +28,28 @@
   },
   "agents": {
     "title": "Agentes AI",
-    "subtitle": "Automatiza tareas y procesos con agentes inteligentes.",
+    "subtitle": "Agentes con AI para realizar tareas específicas y auomatizar procesos.",
     "video_text": "Ver video",
     "btn_link": "Más información",
     "features": {
-      "title": "Automatización de procesos",
+      "title": "Automatiza tus procesos",
       "1": {
-        "title": "Automatización de procesos",
-        "description": "Automatiza los procesos de tu agencia y ahorra tiempo y dinero."
+        "title": "Soporte de Cliente",
+        "description": "Agente especializado para resolver dudas con el producto, quejas y preguntas especializadas con el servicio."
+      },
+      "2": {
+        "title": "Agente encargado de agendar reuniones",
+        "description": "Agente especializado para reservar, confirmar, reagendar o cancelar citas mientras brinda un excelente servicio al cliente."
       }
     },
     "faqs": {
       "1": {
-        "question": "¿Qué es un CRM?",
-        "answer": "Un CRM es un software que te permite gestionar las relaciones con tus clientes."
+        "question": "¿Cuál es el costo del servicio?",
+        "answer": "El costo varia dependiendo de la implementación, un costo regular sería de aproximadamente 3,500 MXN. Este es solo el costo de desarrollo del agente"
       },
       "2": {
-        "question": "¿Qué es un ERP?",
-        "answer": "Un ERP es un software que te permite gestionar los recursos de tu empresa."
+        "question": "¿Dónde se aloja el agente?",
+        "answer": "El agente puede estar alojado en la nube o en tu propia infraestructura, en algunos casos, los agentes van a requerir del consumo de APIS"
       }
     }
   },

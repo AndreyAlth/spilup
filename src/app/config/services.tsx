@@ -21,6 +21,12 @@ export const services: Service[] = [
           title: 'agents.features.1.title',
           description:
             'agents.features.1.description'
+        },
+        {
+          id: 2,
+          title: 'agents.features.2.title',
+          description:
+            'agents.features.2.description'
         }
       ]
     },
@@ -45,40 +51,28 @@ export const services: Service[] = [
     title: 'custom_soft.title',
     subtitle: 'custom_soft.subtitle',
     img_url: null,
-    video_text: 'Ver demo',
+    video_text: 'custom_soft.video_text',
     video_url: 'https://www.youtube.com/watch?v=0O2aH4XLbto',
-    btn_text: 'Más información',
+    btn_text: 'custom_soft.btn_link',
     btn_link: '#',
     features: {
       img: '/assets/images/home-four/features-thumb.webp',
-      title: 'Automatización de procesos',
+      title: 'custom_soft.features.title',
       list: [
         {
           id: 1,
-          title: 'Automatización de procesos',
+          title: 'custom_soft.features.1.title',
           description:
-            'Automatiza los procesos de tu agencia y ahorra tiempo y dinero.'
+            'custom_soft.features.1.description'
         }
       ]
     },
     faqs: [
       {
         id: 1,
-        question: '¿Qué es un CRM?',
+        question: 'custom_soft.faqs.1.question',
         answer:
-          'Un CRM es un software que te permite gestionar las relaciones con tus clientes.'
-      },
-      {
-        id: 2,
-        question: '¿Qué es un CRM?',
-        answer:
-          'Un CRM es un software que te permite gestionar las relaciones con tus clientes.'
-      },
-      {
-        id: 3,
-        question: '¿Qué es un CRM?',
-        answer:
-          'Un CRM es un software que te permite gestionar las relaciones con tus clientes.'
+          'custom_soft.faqs.1.answer'
       }
     ]
   },

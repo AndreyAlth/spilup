@@ -1,6 +1,7 @@
-import { AppWindow, AudioLines, BotMessageSquare, Captions } from "lucide-react";
+import { AppWindow, AudioLines, BotMessageSquare, Captions, Workflow } from "lucide-react";
+import { Service } from "../types/Services";
 
-export const services = [
+export const services: Service[] = [
   {
     id: 'agents',
     icon: <BotMessageSquare size={45} stroke='white' strokeWidth={1}/>,
@@ -140,5 +141,48 @@ export const services = [
         answer: 'Un CRM es un software que te permite gestionar las relaciones con tus clientes.',
       }
     ],
+  },
+  {
+    id: 'automatization',
+    icon: <Workflow size={45} stroke='white' strokeWidth={1}/>,
+    title: 'automatization.title',
+    subtitle: 'automatization.subtitle',
+    img_url: null,
+    video_text: 'Ver demo',
+    video_url: 'https://www.youtube.com/watch?v=0O2aH4XLbto',
+    btn_text: 'Más información',
+    btn_link: '#',
+    features: {
+      img: '/assets/images/home-four/features-thumb.webp',
+      title: 'Automatización de procesos',
+      list: [
+        {
+          id: 1,
+          title: 'Automatización de procesos',
+          description:
+            'Automatiza los procesos de tu agencia y ahorra tiempo y dinero.'
+        }
+      ]
+    },
+    faqs: [
+      {
+        id: 1,
+        question: '¿Qué es un CRM?',
+        answer:
+          'Un CRM es un software que te permite gestionar las relaciones con tus clientes.'
+      },
+      {
+        id: 2,
+        question: '¿Qué es un CRM?',
+        answer:
+          'Un CRM es un software que te permite gestionar las relaciones con tus clientes.'
+      },
+      {
+        id: 3,
+        question: '¿Qué es un CRM?',
+        answer:
+          'Un CRM es un software que te permite gestionar las relaciones con tus clientes.'
+      }
+    ]
   }
 ];

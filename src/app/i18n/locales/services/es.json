@@ -33,5 +33,28 @@
         "answer": "Un ERP es un software que te permite gestionar los recursos de tu empresa."
       }
     }
+  },
+  "automatization": {
+    "title": "Automatizaciones con AI",
+    "subtitle": "Automatiza tareas y procesos con agentes inteligentes.",
+    "video_text": "Ver video",
+    "btn_link": "Más información",
+    "features": {
+      "title": "Automatización de procesos",
+      "1": {
+        "title": "Automatización de procesos",
+        "description": "Automatiza los procesos de tu agencia y ahorra tiempo y dinero."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "¿Qué es un CRM?",
+        "answer": "Un CRM es un software que te permite gestionar las relaciones con tus clientes."
+      },
+      "2": {
+        "question": "¿Qué es un ERP?",
+        "answer": "Un ERP es un software que te permite gestionar los recursos de tu empresa."
+      }
+    }
   }
 }

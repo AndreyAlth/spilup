@@ -18,7 +18,7 @@ const Card = ({ id, title, subtitle, children }: CardProps) => {
     <Link href={`/services/${id}`}>
       <div
         data-aos="fade-left"
-        className="service-item p-5 md:p-[50px] relative group"
+        className="service-item p-5 md:p-[50px] relative group h-full"
       >
         <div className="service-item-ico w-[80px] h-[80px] rounded-[10px] flex justify-center items-center mb-7">
           {children}
@@ -56,7 +56,7 @@ export function Services() {
                 </div>
               </div>
             </div>
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] h-full">
               {services.map(service => (
                 <Card
                   key={service.id}

@@ -27,7 +27,8 @@
       "email": "Email",
       "message": "Mensaje",
       "submit": "Enviar"
-    }
+    },
+    "send_message": "Enviar mensaje"
   },
   "services_list": {
     "custom_soft": {

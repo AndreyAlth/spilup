@@ -23,7 +23,9 @@
       "components/*": ["./src/app/components/*"],
       "config/*": ["./src/app/config/*"],
       "types/*": ["./src/app/types/*"],
-      "utils/*": ["./src/app/utils/*"]
+      "utils/*": ["./src/app/utils/*"],
+      "email/*": ["./src/app/email/*"],
+      "api/*": ["./src/app/api/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/(main)/services/[service_id]"],

@@ -4,6 +4,7 @@ import AOS from 'aos';
 import { PageLayout } from './PageLayout';
 import { LandingHeader } from '../components/quland/LandingHeader';
 import { Footer } from '../components/quland/FooterLanding';
+import { ToastContainer } from 'react-toastify'
 
 export const MainLayout = ({ children }) => {
   useEffect(() => {
@@ -19,6 +20,7 @@ export const MainLayout = ({ children }) => {
           <Footer />
         </div>
       </PageLayout>
+      <ToastContainer/>
     </div>
   );
 };

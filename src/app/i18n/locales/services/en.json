@@ -87,7 +87,7 @@
         "question": "How are transcription results delivered?",
         "answer": "Transcriptions are delivered in various formats such as TXT, PDF, or custom formats, with options for timestamps and speaker labeling."
       },
-      "5": {
+      "4": {
         "question": "Does the system work offline?",
         "answer": "We offer both cloud solutions and local deployment options for offline environments, depending on security and privacy requirements."
       }

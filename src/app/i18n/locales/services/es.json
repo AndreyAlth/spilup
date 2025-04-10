@@ -7,28 +7,44 @@
     "features": {
       "title": "Software que te ayuda en tus procesos operativos",
       "1": {
-        "title": "Soporte de Cliente",
-        "description": "Agente especializado para resolver dudas con el producto, quejas y preguntas especializadas con el servicio."
+        "title": "Análisis y Diseño Personalizado",
+        "description": "Desarrollamos soluciones específicas para tu negocio, adaptadas a tus procesos y necesidades únicas."
+      },
+      "2": {
+        "title": "Integración con Sistemas Existentes",
+        "description": "Conectamos tu nuevo software con tus sistemas actuales, asegurando una transición suave y flujo de datos eficiente."
+      },
+      "3": {
+        "title": "Desarrollo Ágil y Escalable",
+        "description": "Utilizamos metodologías ágiles para entregar resultados rápidos y construir sistemas que crecen con tu negocio."
+      },
+      "4": {
+        "title": "Interfaz Intuitiva",
+        "description": "Diseñamos interfaces fáciles de usar que mejoran la productividad y reducen la curva de aprendizaje."
+      },
+      "5": {
+        "title": "Soporte y Mantenimiento",
+        "description": "Ofrecemos soporte continuo y actualizaciones para mantener tu software funcionando de manera óptima."
+      },
+      "6": {
+        "title": "Seguridad Integrada",
+        "description": "Implementamos las mejores prácticas de seguridad para proteger tus datos y cumplir con regulaciones."
       }
     },
     "faqs": {
       "1": {
-        "question": "¿Dónde se aloja el agente?",
-        "answer": "El agente puede estar alojado en la nube o en tu propia infraestructura, en algunos casos, los agentes van a requerir del consumo de APIS"
-      },
-      "2": {
         "question": "¿Cuánto tiempo toma desarrollar un software a la medida?",
         "answer": "El tiempo de desarrollo varía según la complejidad del proyecto. Típicamente, un proyecto pequeño puede tomar de 2 a 3 meses, mientras que proyectos más complejos pueden extenderse de 6 meses a 1 año."
       },
-      "3": {
+      "2": {
         "question": "¿Qué metodología utilizan para el desarrollo?",
         "answer": "Utilizamos metodologías ágiles como Scrum, lo que nos permite entregar resultados de manera iterativa y mantener una comunicación constante con el cliente durante todo el proceso de desarrollo."
       },
-      "4": {
+      "3": {
         "question": "¿Incluyen mantenimiento y soporte después del desarrollo?",
         "answer": "Sí, ofrecemos servicios de mantenimiento y soporte post-desarrollo para asegurar que tu software funcione correctamente y se mantenga actualizado."
       },
-      "5": {
+      "4": {
         "question": "¿Qué tecnologías utilizan para el desarrollo?",
         "answer": "Utilizamos las tecnologías más actuales y adecuadas para cada proyecto específico, incluyendo lenguajes como Python, JavaScript, TypeScript, y frameworks modernos según los requerimientos del proyecto."
       }
@@ -185,30 +201,22 @@
     },
     "faqs": {
       "1": {
-        "question": "¿Qué es un CRM?",
-        "answer": "Un CRM es un software que te permite gestionar las relaciones con tus clientes."
-      },
-      "2": {
-        "question": "¿Qué es un ERP?",
-        "answer": "Un ERP es un software que te permite gestionar los recursos de tu empresa."
-      },
-      "3": {
         "question": "¿Qué tipos de procesos se pueden automatizar?",
         "answer": "Se pueden automatizar diversos procesos como gestión de documentos, flujos de aprobación, procesamiento de datos, generación de reportes, seguimiento de tareas y comunicaciones rutinarias."
       },
-      "4": {
+      "2": {
         "question": "¿Cuánto tiempo toma implementar una automatización?",
         "answer": "El tiempo de implementación varía según la complejidad del proceso, típicamente desde 2 semanas para automatizaciones simples hasta 2-3 meses para procesos más complejos."
       },
-      "5": {
+      "3": {
         "question": "¿Qué beneficios puedo esperar de la automatización?",
         "answer": "Los beneficios incluyen reducción de errores humanos, ahorro de tiempo, mayor eficiencia operativa, reducción de costos y mejor seguimiento de procesos."
       },
-      "6": {
+      "4": {
         "question": "¿Se requiere conocimiento técnico para usar las automatizaciones?",
         "answer": "No, las automatizaciones se diseñan para ser fáciles de usar. Proporcionamos capacitación y soporte para que tu equipo pueda operarlas sin necesidad de conocimientos técnicos avanzados."
       },
-      "7": {
+      "5": {
         "question": "¿Las automatizaciones se pueden modificar después de implementadas?",
         "answer": "Sí, las automatizaciones son flexibles y pueden ajustarse según cambien tus necesidades o procesos de negocio."
       }

@@ -72,10 +72,10 @@ export const ContactForm = () => {
     <div className="theme-container mx-auto">
       <div className="border border-purple/10 bg-white/5 rounded-[10px] p-4 md:p-[50px]">
         <h1 className="text-[30px] tracking-tight font-semibold text-white pb-6">
-          Send Us Message
+          {t('contact.title')}
         </h1>
         <p className="text-paragraph mb-[30px] text-white/50">
-          Your email address will not be published. Required fields are marked *
+          {t('contact.form.warning')}
         </p>
         <form
           action={() => handleSubmit()}
@@ -83,31 +83,31 @@ export const ContactForm = () => {
         >
           <input
             type="text"
-            placeholder="Full Name"
+            placeholder={t('contact.form.name')}
             className="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent text-white"
             onChange={e => setName(e.target.value)}
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder={t('contact.form.email')}
             className="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent text-white"
             onChange={e => setEmail(e.target.value)}
           />
           <input
             type="text"
-            placeholder="Phone Number"
+            placeholder={t('contact.form.phone')}
             className="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent text-white"
             onChange={e => setPhone(e.target.value)}
           />
           <input
             type="text"
-            placeholder="Subject"
+            placeholder={t('contact.form.subject')}
             className="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent text-white"
             onChange={e => setSubject(e.target.value)}
           />
           <textarea
             name=""
-            placeholder="Comments"
+            placeholder={t('contact.form.message')}
             className="col-span-6 md:col-span-12 focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent text-white h-[83px]"
             onChange={e => setMessage(e.target.value)}
           ></textarea>
@@ -138,7 +138,7 @@ export const ContactForm = () => {
                     Sending...
                   </div>
                 ) : (
-                  t('contact.send_message')
+                  t('contact.form.submit')
                 )}
               </span>
               <svg

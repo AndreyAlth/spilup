@@ -21,14 +21,16 @@
     "button": "See more info"
   },
   "contact": {
-    "title": "Get in Touch",
+    "title": "Send Us Message",
     "form": {
+      "warning": "Your email address will not be published. Required fields are marked *",
       "name": "Name",
       "email": "Email",
       "message": "Message",
+      "phone": "Phone",
+      "subject": "Subject",
       "submit": "Send"
-    },
-    "send_message": "Send message"
+    }
   },
   "services_list": {
     "custom_soft": {

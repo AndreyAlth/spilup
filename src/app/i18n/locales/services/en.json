@@ -221,5 +221,56 @@
         "answer": "Yes, automations are flexible and can be adjusted as your needs or business processes change."
       }
     }
+  },
+  "ecommerce": {
+    "title": "Ecommerce Platform",
+    "subtitle": "Manage your sales, track orders and manage your inventory.",
+    "video_text": "Watch video",
+    "btn_link": "More information",
+    "features": {
+      "title": "Ecommerce Platform",
+      "1": {
+        "title": "Admin Page to manage your store",
+        "description": "Manage your sales, track orders and manage your inventory."
+      },
+      "2": {
+        "title": "Customer page",
+        "description": "Customers can view their purchase history, track their orders and manage their personal information."
+      },
+      "3": {
+        "title": "Payment methods",
+        "description": "Secure and reliable payment methods for your customers, including credit cards, debit cards and bank transfers. Stripe by default"
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "What does the ecommerce platform include?",
+        "answer": "The platform includes a complete admin panel, customer page, inventory management, order tracking, payment method integration and sales reports."
+      },
+      "2": {
+        "question": "What payment methods are available?",
+        "answer": "By default we include Stripe integration, which allows payments with credit and debit cards. We can also integrate other payment methods according to your needs."
+      },
+      "3": {
+        "question": "How is inventory managed?",
+        "answer": "The system includes real-time inventory management, low stock alerts, product variant control and product sales tracking."
+      },
+      "4": {
+        "question": "Can the store design be customized?",
+        "answer": "Yes, the platform is fully customizable. We can adapt the design according to your brand and specific needs."
+      },
+      "5": {
+        "question": "What kind of reports and analytics does the platform offer?",
+        "answer": "We offer sales reports, best-selling product analysis, conversion tracking, customer metrics and custom reports according to your needs."
+      },
+      "6": {
+        "question": "How is payment security handled?",
+        "answer": "We use Stripe as the main payment processor, which complies with the highest PCI DSS security standards. All payment data is handled securely and encrypted."
+      },
+      "7": {
+        "question": "Can it be integrated with other systems?",
+        "answer": "Yes, the platform can be integrated with accounting systems, CRM, ERP and other business tools through APIs."
+      }
+    }
   }
 }

@@ -23,12 +23,14 @@
   "contact": {
     "title": "Contáctanos",
     "form": {
+      "warning": "Tu dirección de correo electrónico no será publicada. Los campos obligatorios están marcados con *",
       "name": "Nombre",
       "email": "Email",
       "message": "Mensaje",
+      "phone": "Teléfono",
+      "subject": "Asunto",
       "submit": "Enviar"
-    },
-    "send_message": "Enviar mensaje"
+    }
   },
   "services_list": {
     "custom_soft": {

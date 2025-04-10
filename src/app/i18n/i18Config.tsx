@@ -18,8 +18,8 @@ export const i18Config = {
       services: service_es
     }
   },
-  lng: 'en', // if you're using a language detector, do not define the lng option
-  fallbackLng: 'en',
+  lng: 'es', // if you're using a language detector, do not define the lng option
+  fallbackLng: 'es',
 
   interpolation: {
     escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape

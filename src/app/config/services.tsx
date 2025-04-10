@@ -134,5 +134,30 @@ export const services: Service[] = [
       question: 'automatization.faqs.namekey.question',
       answer: 'automatization.faqs.namekey.answer'
     })
+  },
+  {
+    id: 'ecommerce',
+    icon: <Workflow size={45} stroke='white' strokeWidth={1}/>,
+    title: 'ecommerce.title',
+    subtitle: 'ecommerce.subtitle',
+    img_url: null,
+    video_text: 'Ver demo',
+    video_url: 'https://www.youtube.com/watch?v=0O2aH4XLbto',
+    btn_text: 'Más información',
+    btn_link: '#',
+    features: {
+      img: '/assets/images/home-four/features-thumb.webp',
+      title: 'Automatización de procesos',
+      list: generateArray(3, {
+        id: 1,
+        title: 'ecommerce.features.namekey.title',
+        description: 'ecommerce.features.namekey.description'
+      })
+    },
+    faqs: generateArray(7, {  
+      id: 1,
+      question: 'ecommerce.faqs.namekey.question',
+      answer: 'ecommerce.faqs.namekey.answer'
+    })
   }
 ];

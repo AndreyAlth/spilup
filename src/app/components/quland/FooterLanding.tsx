@@ -143,7 +143,7 @@ export function Footer() {
               </div>
               <div className="flex gap-2 items-center relative group font-medium text-white/50 hover:text-white hover:underline transition-all duration-300 mt-3.5">
                 <span className="transition-all duration-300">
-                  <Link href="">+52 999 358 4115</Link>
+                  <Link href={message.contact}>+52 990 335 2292</Link>
                 </span>
               </div>
             </div>

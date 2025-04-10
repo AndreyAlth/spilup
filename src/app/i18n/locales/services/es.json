@@ -221,5 +221,56 @@
         "answer": "Sí, las automatizaciones son flexibles y pueden ajustarse según cambien tus necesidades o procesos de negocio."
       }
     }
+  },
+  "ecommerce": {
+    "title": "Plataforma Ecommerce",
+    "subtitle": "Administra tus ventas, da seguimeinto a pedidos y gestiona tu inventario.",
+    "video_text": "Ver video",
+    "btn_link": "Más información",
+    "features": {
+      "title": "Plataforma Ecommerce",
+      "1": {
+        "title": "Pàgina Admin para gentiorar tu tienda",
+        "description": "Administra tus ventas, da seguimeinto a pedidos y gestiona tu inventario."
+      },
+      "2": {
+        "title": "Página de cliente",
+        "description": "Los clientes pueden ver su historial de compras, dar seguimiento a sus pedidos y gestionar su información personal."
+      },
+      "3": {
+        "title": "Métodos de pago",
+        "description": "Métodos de pago seguros y confiables para tus clientes, incluyendo tarjetas de crédito, débito y transferencias bancarias. Por default Stripe"
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "¿Qué incluye la plataforma de ecommerce?",
+        "answer": "La plataforma incluye un panel de administración completo, página de cliente, gestión de inventario, seguimiento de pedidos, integración con métodos de pago y reportes de ventas."
+      },
+      "2": {
+        "question": "¿Qué métodos de pago están disponibles?",
+        "answer": "Por defecto incluimos integración con Stripe, que permite pagos con tarjetas de crédito y débito. También podemos integrar otros métodos de pago según tus necesidades."
+      },
+      "3": {
+        "question": "¿Cómo se maneja el inventario?",
+        "answer": "El sistema incluye gestión de inventario en tiempo real, alertas de stock bajo, control de variantes de productos y seguimiento de ventas por producto."
+      },
+      "4": {
+        "question": "¿Se puede personalizar el diseño de la tienda?",
+        "answer": "Sí, la plataforma es completamente personalizable. Podemos adaptar el diseño según tu marca y necesidades específicas."
+      },
+      "5": {
+        "question": "¿Qué tipo de reportes y análisis ofrece la plataforma?",
+        "answer": "Ofrecemos reportes de ventas, análisis de productos más vendidos, seguimiento de conversiones, métricas de clientes y reportes personalizados según tus necesidades."
+      },
+      "6": {
+        "question": "¿Cómo se maneja la seguridad de los pagos?",
+        "answer": "Utilizamos Stripe como procesador de pagos principal, que cumple con los más altos estándares de seguridad PCI DSS. Todos los datos de pago se manejan de forma segura y encriptada."
+      },
+      "7": {
+        "question": "¿Se puede integrar con otros sistemas?",
+        "answer": "Sí, la plataforma puede integrarse con sistemas de contabilidad, CRM, ERP y otras herramientas de negocio a través de APIs."
+      }
+    }
   }
 }

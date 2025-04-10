@@ -18,7 +18,7 @@ export function LandingHeader() {
           <div className="w-full h-[95px] flex justify-between items-center">
             <div className="flex space-x-[100px] items-center">
               <div>
-                <Link href="#">
+                <Link href="/">
                   <div className="flex flex-row">
                     <img
                       src="/assets/icons/logo_color_1.svg"

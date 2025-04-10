@@ -1,0 +1,225 @@
+{
+  "custom_soft": {
+    "title": "Software a la medida",
+    "subtitle": "Desarrollamos soluciones personalizadas según tus necesidades y automatización de procesos.",
+    "video_text": "Ver video",
+    "btn_link": "Más información",
+    "features": {
+      "title": "Software que te ayuda en tus procesos operativos",
+      "1": {
+        "title": "Análisis y Diseño Personalizado",
+        "description": "Desarrollamos soluciones específicas para tu negocio, adaptadas a tus procesos y necesidades únicas."
+      },
+      "2": {
+        "title": "Integración con Sistemas Existentes",
+        "description": "Conectamos tu nuevo software con tus sistemas actuales, asegurando una transición suave y flujo de datos eficiente."
+      },
+      "3": {
+        "title": "Desarrollo Ágil y Escalable",
+        "description": "Utilizamos metodologías ágiles para entregar resultados rápidos y construir sistemas que crecen con tu negocio."
+      },
+      "4": {
+        "title": "Interfaz Intuitiva",
+        "description": "Diseñamos interfaces fáciles de usar que mejoran la productividad y reducen la curva de aprendizaje."
+      },
+      "5": {
+        "title": "Soporte y Mantenimiento",
+        "description": "Ofrecemos soporte continuo y actualizaciones para mantener tu software funcionando de manera óptima."
+      },
+      "6": {
+        "title": "Seguridad Integrada",
+        "description": "Implementamos las mejores prácticas de seguridad para proteger tus datos y cumplir con regulaciones."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "¿Cuánto tiempo toma desarrollar un software a la medida?",
+        "answer": "El tiempo de desarrollo varía según la complejidad del proyecto. Típicamente, un proyecto pequeño puede tomar de 2 a 3 meses, mientras que proyectos más complejos pueden extenderse de 6 meses a 1 año."
+      },
+      "2": {
+        "question": "¿Qué metodología utilizan para el desarrollo?",
+        "answer": "Utilizamos metodologías ágiles como Scrum, lo que nos permite entregar resultados de manera iterativa y mantener una comunicación constante con el cliente durante todo el proceso de desarrollo."
+      },
+      "3": {
+        "question": "¿Incluyen mantenimiento y soporte después del desarrollo?",
+        "answer": "Sí, ofrecemos servicios de mantenimiento y soporte post-desarrollo para asegurar que tu software funcione correctamente y se mantenga actualizado."
+      },
+      "4": {
+        "question": "¿Qué tecnologías utilizan para el desarrollo?",
+        "answer": "Utilizamos las tecnologías más actuales y adecuadas para cada proyecto específico, incluyendo lenguajes como Python, JavaScript, TypeScript, y frameworks modernos según los requerimientos del proyecto."
+      }
+    }
+  },
+  "transcripcion": {
+    "title": "Sistema de transcripciones",
+    "subtitle": "Convierte audio en texto con alta precisión y rapidez.",
+    "video_text": "Ver video",
+    "btn_link": "Más información",
+    "features": {
+      "title": "Transcripción de audio precisa y eficiente",
+      "1": {
+        "title": "Transcripción en tiempo real",
+        "description": "Convierte audio a texto de manera instantánea durante llamadas, reuniones o grabaciones en vivo."
+      },
+      "2": {
+        "title": "Procesamiento por colas",
+        "description": "Transcribe múltiples archivos de audio simultáneamente agregándolos a una cola de procesamiento."
+      },
+      "3": {
+        "title": "Múltiples formatos soportados",
+        "description": "Compatible con diversos formatos de audio como MP3, WAV, M4A y más."
+      },
+      "4": {
+        "title": "Identificación de hablantes",
+        "description": "Distingue entre diferentes voces en una conversación para una transcripción más clara y organizada."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "¿Qué idiomas soporta el sistema de transcripción?",
+        "answer": "Nuestro sistema soporta principalmente español e inglés. Otros idiomas están disponibles bajo demanda."
+      },
+      "2": {
+        "question": "¿Cuál es la precisión de las transcripciones?",
+        "answer": "La precisión típica es superior al 95% en condiciones óptimas de audio. La calidad puede variar según la claridad del audio, ruido de fondo y acento del hablante."
+      },
+      "3": {
+        "question": "¿Cómo se entrega el resultado de la transcripción?",
+        "answer": "Las transcripciones se entregan en varios formatos como TXT, PDF o formatos personalizados, con opciones de marcas de tiempo y etiquetado de hablantes."
+      },
+      "5": {
+        "question": "¿El sistema funciona sin conexión a internet?",
+        "answer": "Ofrecemos tanto soluciones en la nube como opciones de implementación local para entornos sin conexión, según los requisitos de seguridad y privacidad."
+      }
+    }
+  },
+  "voiceprint": {
+    "title": "Sistema de reconocimiento de voz",
+    "subtitle": "Identifica y verifica hablantes por su voz.",
+    "video_text": "Ver video",
+    "btn_link": "Más información",
+    "features": {
+      "title": "Identificación y verificación de voz avanzada",
+      "1": {
+        "title": "Autenticación biométrica por voz",
+        "description": "Verifica la identidad de usuarios mediante su huella vocal única con alta precisión y seguridad."
+      },
+      "2": {
+        "title": "Detección de voz en vivo",
+        "description": "Identifica y verifica voces en tiempo real durante llamadas o conversaciones en directo."
+      },
+      "3": {
+        "title": "Anti-spoofing avanzado",
+        "description": "Detecta intentos de suplantación y grabaciones, garantizando la autenticidad de la voz."
+      },
+      "4": {
+        "title": "Integración multicanal",
+        "description": "Compatible con diferentes canales de comunicación como teléfono, aplicaciones móviles y sistemas web."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "¿Qué tan seguro es el reconocimiento de voz?",
+        "answer": "Nuestro sistema utiliza tecnología biométrica avanzada con una precisión superior al 99% y protección contra intentos de suplantación."
+      },
+      "2": {
+        "question": "¿Cuánto tiempo toma registrar una huella vocal?",
+        "answer": "El proceso de registro típicamente toma menos de 30 segundos, requiriendo que el usuario lea una breve frase de calibración."
+      },
+      "3": {
+        "question": "¿Funciona con cualquier idioma?",
+        "answer": "El sistema es independiente del idioma y funciona con cualquier lengua, ya que se basa en características biométricas únicas de la voz."
+      },
+      "4": {
+        "question": "¿Qué pasa si la voz de la persona cambia por enfermedad?",
+        "answer": "El sistema tiene en cuenta variaciones naturales en la voz y puede adaptarse a cambios temporales. En casos de cambios significativos, se puede actualizar el perfil vocal."
+      },
+      "5": {
+        "question": "¿Cómo se integra con sistemas existentes?",
+        "answer": "Ofrecemos el APIs para integración con sistemas de autenticación existentes, call centers y aplicaciones personalizadas."
+      },
+      "6": {
+        "question": "¿Dónde se almacenan las huellas vocales?",
+        "answer": "Las huellas vocales se almacenan de forma segura y encriptada, ya sea en la nube o en servidores locales, cumpliendo con estándares de privacidad y seguridad."
+      }
+    }
+  },
+  "agents": {
+    "title": "Agentes AI",
+    "subtitle": "Agentes con AI para realizar tareas específicas y auomatizar procesos.",
+    "video_text": "Ver video",
+    "btn_link": "Más información",
+    "features": {
+      "title": "Automatiza tus procesos",
+      "1": {
+        "title": "Soporte de Cliente",
+        "description": "Agente especializado para resolver dudas con el producto, quejas y preguntas especializadas con el servicio."
+      },
+      "2": {
+        "title": "Agente encargado de agendar reuniones",
+        "description": "Agente especializado para reservar, confirmar, reagendar o cancelar citas mientras brinda un excelente servicio al cliente."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "¿Cuál es el costo del servicio?",
+        "answer": "El costo varia dependiendo de la implementación, un costo regular sería de aproximadamente 3,500 MXN. Este es solo el costo de desarrollo del agente"
+      },
+      "2": {
+        "question": "¿Dónde se aloja el agente?",
+        "answer": "El agente puede estar alojado en la nube o en tu propia infraestructura, en algunos casos, los agentes van a requerir del consumo de APIS"
+      },
+      "3": {
+        "question": "¿Qué tipo de tareas pueden realizar los agentes AI?",
+        "answer": "Los agentes pueden realizar diversas tareas como atención al cliente, agendamiento de citas, respuesta a consultas frecuentes, procesamiento de solicitudes básicas y automatización de procesos repetitivos."
+      },
+      "4": {
+        "question": "¿En qué idiomas pueden operar los agentes?",
+        "answer": "Nuestros agentes pueden configurarse para operar en múltiples idiomas, siendo español e inglés los principales, con posibilidad de expandir a otros idiomas según necesidad."
+      },
+      "5": {
+        "question": "¿Qué nivel de personalización ofrecen para los agentes?",
+        "answer": "Los agentes pueden personalizarse completamente según tus necesidades, incluyendo el tono de comunicación, conocimiento específico de tu industria y flujos de trabajo particulares."
+      },
+      "6": {
+        "question": "¿Cómo se integran los agentes con sistemas existentes?",
+        "answer": "Los agentes pueden integrarse con tus sistemas actuales a través de APIs, webhooks y conectores personalizados, permitiendo una comunicación fluida con tus herramientas existentes."
+      }
+    }
+  },
+  "automatization": {
+    "title": "Automatizaciones con AI",
+    "subtitle": "Automatiza tareas y procesos con agentes inteligentes.",
+    "video_text": "Ver video",
+    "btn_link": "Más información",
+    "features": {
+      "title": "Automatización de procesos",
+      "1": {
+        "title": "Automatización de procesos",
+        "description": "Automatiza los procesos de tu agencia y ahorra tiempo y dinero."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "¿Qué tipos de procesos se pueden automatizar?",
+        "answer": "Se pueden automatizar diversos procesos como gestión de documentos, flujos de aprobación, procesamiento de datos, generación de reportes, seguimiento de tareas y comunicaciones rutinarias."
+      },
+      "2": {
+        "question": "¿Cuánto tiempo toma implementar una automatización?",
+        "answer": "El tiempo de implementación varía según la complejidad del proceso, típicamente desde 2 semanas para automatizaciones simples hasta 2-3 meses para procesos más complejos."
+      },
+      "3": {
+        "question": "¿Qué beneficios puedo esperar de la automatización?",
+        "answer": "Los beneficios incluyen reducción de errores humanos, ahorro de tiempo, mayor eficiencia operativa, reducción de costos y mejor seguimiento de procesos."
+      },
+      "4": {
+        "question": "¿Se requiere conocimiento técnico para usar las automatizaciones?",
+        "answer": "No, las automatizaciones se diseñan para ser fáciles de usar. Proporcionamos capacitación y soporte para que tu equipo pueda operarlas sin necesidad de conocimientos técnicos avanzados."
+      },
+      "5": {
+        "question": "¿Las automatizaciones se pueden modificar después de implementadas?",
+        "answer": "Sí, las automatizaciones son flexibles y pueden ajustarse según cambien tus necesidades o procesos de negocio."
+      }
+    }
+  }
+}

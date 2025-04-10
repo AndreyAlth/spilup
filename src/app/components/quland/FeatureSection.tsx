@@ -1,7 +1,14 @@
 "use client";
+import { Service } from '@/app/types/Services';
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
-export function FeatureSection() {
+interface HeroServiceProps {
+  service: Service;
+}
+
+export function FeatureSection({ service }: HeroServiceProps) {
+  const { t } = useTranslation('services');
   return (
     <section id="features">
       <div className="feature-section-wrapper w-full py-16 md:py-[130px] mt-8 md:mt-[130px] relative overflow-x-hidden">
@@ -13,32 +20,35 @@ export function FeatureSection() {
               </div>
               <div className="mb-[50px]">
                 <h2 className="font-semibold text-white text-24 sm:text-48">
-                  Faster, Smarter, Start <br />
-                  to use in few seconds
+                  {t(service?.features.title)}
                 </h2>
               </div>
               <div className="w-full">
-                <div data-aos="fade-up" className="feature-item-h-4">
-                  <div className="feature-item-wrapper w-full px-5 py-5 md:px-[30px] md:py-[35px] flex flex-col sm:flex-row gap-5 sm:gap-10 items-start">
-                    <div className="w-[30px]">
-                      <img
-                        src="/assets/images/home-four/feature-ico-1.webp"
-                        alt=""
-                        className="w-[30px] h-[30px]"
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="mb-3 font-semibold leading-none text-white text-22">
-                        Unified Design Language
-                      </h3>
-                      <p className="text-white opacity-50">
-                        Unified Design Language (UDL) is the cornerstone of
-                        harmonious and intuitive design philosophy
-                      </p>
+                { service?.features.list.map((feature) => {
+                  return (
+                    <div key={feature.id} data-aos="fade-up" className="feature-item-h-4">
+                    <div className="feature-item-wrapper w-full px-5 py-5 md:px-[30px] md:py-[35px] flex flex-col sm:flex-row gap-5 sm:gap-10 items-start">
+                      <div className="w-[30px]">
+                        <img
+                          src="/assets/images/home-four/feature-ico-1.webp"
+                          alt=""
+                          className="w-[30px] h-[30px]"
+                        />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="mb-3 font-semibold leading-none text-white text-22">
+                          {t(feature.title)}
+                        </h3>
+                        <p className="text-white opacity-50">
+                          {t(feature.description)}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div
+                  )
+                })}
+               
+                {/* <div
                   data-aos="fade-up"
                   data-aos-delay="100"
                   className="feature-item-h-4"
@@ -85,18 +95,22 @@ export function FeatureSection() {
                       </p>
                     </div>
                   </div>
+                </div> */}
+              </div>
+            </div>
+            {
+              service?.features.img && (
+                <div data-aos="fade-left" className="w-full">
+                  <div className="px-5 py-4 md:px-[74px] md:py-[67px] rounded-[20px] border border-[#231b2f] bg-[#0C022C]">
+                    <img
+                      src={service?.features.img}
+                      alt=""
+                      className="w-full rounded-md"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div data-aos="fade-left" className="w-full">
-              <div className="px-5 py-4 md:px-[74px] md:py-[67px] rounded-[20px] border border-[#231b2f] bg-[#0C022C]">
-                <img
-                  src="/assets/images/home-four/features-thumb.webp"
-                  alt=""
-                  className="w-full rounded-md"
-                />
-              </div>
-            </div>
+              )
+            }
           </div>
         </div>
         <div className="absolute z-10 shape-1 left-40 top-96">

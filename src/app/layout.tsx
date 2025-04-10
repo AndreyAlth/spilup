@@ -2,7 +2,10 @@
 import dynamic from 'next/dynamic';
 import './globals.css';
 import { Provider } from './i18n/Provider';
-const PixelTracker = dynamic(() => import("@/app/components/facebook/Pixel"), { ssr: false });
+import { MainLayout } from './new-layout/MainLayout'
+const PixelTracker = dynamic(() => import('@/app/components/facebook/Pixel'), {
+  ssr: false
+});
 
 export default function RootLayout({
   children
@@ -15,7 +18,11 @@ export default function RootLayout({
       <link rel="icon" href="/assets/icons/logo_color_1.svg" />
       <body className="">
         <PixelTracker />
-        <Provider>{children}</Provider>
+        <Provider>
+          <MainLayout>
+            {children}
+          </MainLayout>
+        </Provider>
       </body>
     </html>
   );

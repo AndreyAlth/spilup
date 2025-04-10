@@ -1,0 +1,225 @@
+{
+  "custom_soft": {
+    "title": "Custom Software",
+    "subtitle": "We develop customized solutions according to your needs and process automation.",
+    "video_text": "Watch video",
+    "btn_link": "More information",
+    "features": {
+      "title": "Software that helps your operational processes",
+      "1": {
+        "title": "Custom Analysis and Design",
+        "description": "We develop specific solutions for your business, adapted to your unique processes and needs."
+      },
+      "2": {
+        "title": "Integration with Existing Systems",
+        "description": "We connect your new software with your current systems, ensuring a smooth transition and efficient data flow."
+      },
+      "3": {
+        "title": "Agile and Scalable Development",
+        "description": "We use agile methodologies to deliver quick results and build systems that grow with your business."
+      },
+      "4": {
+        "title": "Intuitive Interface",
+        "description": "We design easy-to-use interfaces that improve productivity and reduce the learning curve."
+      },
+      "5": {
+        "title": "Support and Maintenance",
+        "description": "We provide continuous support and updates to keep your software running optimally."
+      },
+      "6": {
+        "title": "Built-in Security",
+        "description": "We implement security best practices to protect your data and comply with regulations."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "How long does it take to develop custom software?",
+        "answer": "Development time varies depending on project complexity. Typically, a small project can take 2 to 3 months, while more complex projects can extend from 6 months to 1 year."
+      },
+      "2": {
+        "question": "What methodology do you use for development?",
+        "answer": "We use agile methodologies like Scrum, which allows us to deliver results iteratively and maintain constant communication with the client throughout the development process."
+      },
+      "3": {
+        "question": "Do you include maintenance and support after development?",
+        "answer": "Yes, we offer post-development maintenance and support services to ensure your software works correctly and stays updated."
+      },
+      "4": {
+        "question": "What technologies do you use for development?",
+        "answer": "We use the most current and appropriate technologies for each specific project, including languages like Python, JavaScript, TypeScript, and modern frameworks according to project requirements."
+      }
+    }
+  },
+  "transcripcion": {
+    "title": "Transcription System",
+    "subtitle": "Convert audio to text with high accuracy and speed.",
+    "video_text": "Watch video",
+    "btn_link": "More information",
+    "features": {
+      "title": "Precise and efficient audio transcription",
+      "1": {
+        "title": "Real-time transcription",
+        "description": "Convert audio to text instantly during calls, meetings, or live recordings."
+      },
+      "2": {
+        "title": "Queue processing",
+        "description": "Transcribe multiple audio files simultaneously by adding them to a processing queue."
+      },
+      "3": {
+        "title": "Multiple formats supported",
+        "description": "Compatible with various audio formats such as MP3, WAV, M4A, and more."
+      },
+      "4": {
+        "title": "Speaker identification",
+        "description": "Distinguishes between different voices in a conversation for clearer and organized transcription."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "What languages does the transcription system support?",
+        "answer": "Our system primarily supports English and Spanish. Other languages are available upon request."
+      },
+      "2": {
+        "question": "What is the accuracy of the transcriptions?",
+        "answer": "Typical accuracy is over 95% in optimal audio conditions. Quality may vary depending on audio clarity, background noise, and speaker accent."
+      },
+      "3": {
+        "question": "How are transcription results delivered?",
+        "answer": "Transcriptions are delivered in various formats such as TXT, PDF, or custom formats, with options for timestamps and speaker labeling."
+      },
+      "4": {
+        "question": "Does the system work offline?",
+        "answer": "We offer both cloud solutions and local deployment options for offline environments, depending on security and privacy requirements."
+      }
+    }
+  },
+  "voiceprint": {
+    "title": "Voice Recognition System",
+    "subtitle": "Identify and verify speakers by their voice.",
+    "video_text": "Watch video",
+    "btn_link": "More information",
+    "features": {
+      "title": "Advanced voice identification and verification",
+      "1": {
+        "title": "Voice biometric authentication",
+        "description": "Verify user identity through their unique voiceprint with high accuracy and security."
+      },
+      "2": {
+        "title": "Live voice detection",
+        "description": "Identify and verify voices in real-time during calls or live conversations."
+      },
+      "3": {
+        "title": "Advanced anti-spoofing",
+        "description": "Detect impersonation attempts and recordings, ensuring voice authenticity."
+      },
+      "4": {
+        "title": "Multichannel integration",
+        "description": "Compatible with different communication channels such as phone, mobile apps, and web systems."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "How secure is voice recognition?",
+        "answer": "Our system uses advanced biometric technology with over 99% accuracy and protection against impersonation attempts."
+      },
+      "2": {
+        "question": "How long does it take to register a voiceprint?",
+        "answer": "The registration process typically takes less than 30 seconds, requiring the user to read a brief calibration phrase."
+      },
+      "3": {
+        "question": "Does it work with any language?",
+        "answer": "The system is language-independent and works with any language, as it relies on unique biometric voice characteristics."
+      },
+      "4": {
+        "question": "What happens if someone's voice changes due to illness?",
+        "answer": "The system accounts for natural voice variations and can adapt to temporary changes. In cases of significant changes, the voice profile can be updated."
+      },
+      "5": {
+        "question": "How does it integrate with existing systems?",
+        "answer": "We offer APIs for integration with existing authentication systems, call centers, and custom applications."
+      },
+      "6": {
+        "question": "Where are voiceprints stored?",
+        "answer": "Voiceprints are stored securely and encrypted, either in the cloud or on local servers, complying with privacy and security standards."
+      }
+    }
+  },
+  "agents": {
+    "title": "AI Agents",
+    "subtitle": "AI agents to perform specific tasks and automate processes.",
+    "video_text": "Watch video",
+    "btn_link": "More information",
+    "features": {
+      "title": "Automate your processes",
+      "1": {
+        "title": "Customer Support",
+        "description": "Specialized agent for resolving product inquiries, complaints, and specialized service questions."
+      },
+      "2": {
+        "title": "Meeting Scheduling Agent",
+        "description": "Specialized agent for booking, confirming, rescheduling, or canceling appointments while providing excellent customer service."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "What is the service cost?",
+        "answer": "The cost varies depending on implementation; a regular cost would be approximately 3,500 MXN. This is just the agent development cost."
+      },
+      "2": {
+        "question": "Where is the agent hosted?",
+        "answer": "The agent can be hosted in the cloud or in your own infrastructure; in some cases, agents will require API consumption."
+      },
+      "3": {
+        "question": "What types of tasks can AI agents perform?",
+        "answer": "Agents can perform various tasks such as customer service, appointment scheduling, answering frequent queries, processing basic requests, and automating repetitive processes."
+      },
+      "4": {
+        "question": "What languages can the agents operate in?",
+        "answer": "Our agents can be configured to operate in multiple languages, with English and Spanish being the main ones, with the possibility to expand to other languages as needed."
+      },
+      "5": {
+        "question": "What level of customization do you offer for agents?",
+        "answer": "Agents can be completely customized according to your needs, including communication tone, industry-specific knowledge, and particular workflows."
+      },
+      "6": {
+        "question": "How do agents integrate with existing systems?",
+        "answer": "Agents can integrate with your current systems through APIs, webhooks, and custom connectors, allowing smooth communication with your existing tools."
+      }
+    }
+  },
+  "automatization": {
+    "title": "AI Automation",
+    "subtitle": "Automate tasks and processes with intelligent agents.",
+    "video_text": "Watch video",
+    "btn_link": "More information",
+    "features": {
+      "title": "Process Automation",
+      "1": {
+        "title": "Process Automation",
+        "description": "Automate your agency's processes and save time and money."
+      }
+    },
+    "faqs": {
+      "1": {
+        "question": "What types of processes can be automated?",
+        "answer": "Various processes can be automated such as document management, approval workflows, data processing, report generation, task tracking, and routine communications."
+      },
+      "2": {
+        "question": "How long does it take to implement automation?",
+        "answer": "Implementation time varies depending on process complexity, typically from 2 weeks for simple automations to 2-3 months for more complex processes."
+      },
+      "3": {
+        "question": "What benefits can I expect from automation?",
+        "answer": "Benefits include reduction of human errors, time savings, increased operational efficiency, cost reduction, and better process tracking."
+      },
+      "4": {
+        "question": "Is technical knowledge required to use the automations?",
+        "answer": "No, automations are designed to be easy to use. We provide training and support so your team can operate them without advanced technical knowledge."
+      },
+      "5": {
+        "question": "Can automations be modified after implementation?",
+        "answer": "Yes, automations are flexible and can be adjusted as your needs or business processes change."
+      }
+    }
+  }
+}

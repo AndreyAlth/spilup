@@ -4,31 +4,11 @@ import FooterCta from './FooterCta';
 import Link from 'next/link';
 import { message } from '@/app/config/whatapp';
 import { useTranslation } from 'react-i18next';
+import { services } from 'config/services'
 
 export function Footer() {
   const { t } = useTranslation();
-  const services_list = [
-    {
-      id: 1,
-      title: t('services_list.custom_soft.title'),
-      subtitle: t('services_list.custom_soft.subtitle')
-    },
-    {
-      id: 2,
-      title: t('services_list.transcripcion.title'),
-      subtitle: t('services_list.transcripcion.subtitle')
-    },
-    {
-      id: 3,
-      title: t('services_list.voiceprint.title'),
-      subtitle: t('services_list.voiceprint.subtitle')
-    },
-    {
-      id: 4,
-      title: t('services_list.agents.title'),
-      subtitle: t('services_list.agents.subtitle')
-    }
-  ];
+  const { t:t_services } = useTranslation("services");
   return (
     <footer className="relative w-full overflow-hidden">
       <div className="absolute z-10 shape-1 left-40 top-96">
@@ -119,7 +99,7 @@ export function Footer() {
               <div>
                 <h1 className="font-semibold text-white text-18">Services</h1>
                 <ul className="mt-3.5">
-                  {services_list.map(service => {
+                  {services.slice(0,10).map(service => {
                     return (
                       <li key={service.id} className="">
                         <Link href="#services">
@@ -141,7 +121,7 @@ export function Footer() {
                               />
                             </svg>
                             <span className="transition-all duration-300 group-hover:translate-x-4">
-                              {service.title}
+                              {t_services(service.title)}
                             </span>
                           </div>
                         </Link>

@@ -1,31 +1,15 @@
 "use client";
+import { Service } from "@/app/types/Services";
 import React, { useState } from "react";
-const faqs = [
-  {
-    question: "What factors determine the pricing of SEO services?",
-    answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
-  },
-  {
-    question: "What factors determine the pricing of SEO services?",
-    answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
-  },
-  {
-    question: "What factors determine the pricing of SEO services?",
-    answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
-  },
-  {
-    question: "What factors determine the pricing of SEO services?",
-    answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
-  },
-  // Add more FAQ items here if needed
-];
+import { useTranslation } from "react-i18next";
 
-export function FaqSection() {
+interface HeroServiceProps {
+  service: Service;
+}
+
+export function FaqSection({ service }: HeroServiceProps) {
   const [activeFAQ, setActiveFAQ] = useState(0);
+  const { t } = useTranslation('services');
 
   const toggleFAQ = (index:any) => {
     setActiveFAQ(activeFAQ === index ? 0 : index);
@@ -47,7 +31,7 @@ export function FaqSection() {
               </h2>
               <div className="flex flex-col gap-2.5 w-full mt-10 sm:px-4">
                 {/* <!-- faq single start  --> */}
-                {faqs.map((faq, index) => (
+                {service?.faqs.map((faq, index) => (
                   <div
                     key={index}
                     data-aos="fade-up"
@@ -56,7 +40,7 @@ export function FaqSection() {
                   >
                     <div className="flex items-center justify-between w-full pointer-events-none">
                       <h1 className="font-semibold text-white sm:text-18">
-                        {faq.question}
+                        {t(faq.question)}
                       </h1>
                       <svg
                         width="19"
@@ -76,7 +60,7 @@ export function FaqSection() {
                     </div>
                     {activeFAQ === index && (
                       <p className="mt-3.5 text-white pointer-events-none">
-                        {faq.answer}
+                        {t(faq.answer)}
                       </p>
                     )}
                   </div>

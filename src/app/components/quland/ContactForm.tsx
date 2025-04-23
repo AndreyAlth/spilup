@@ -13,7 +13,6 @@ export const ContactForm = () => {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
-    setLoading(true);
     if (!email || !message || !subject || !name || !phone) {
       setLoading(false);
       toast.info('Form needs email, subject, message, name and phone', {
@@ -78,7 +77,10 @@ export const ContactForm = () => {
           {t('contact.form.warning')}
         </p>
         <form
-          action={() => handleSubmit()}
+          action={() => {
+            setLoading(true);
+            handleSubmit()
+          }}
           className="grid grid-cols-6 md:grid-cols-12 gap-[30px]"
         >
           <input

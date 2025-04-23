@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { Service } from "../types/Services";
 import { generateArray } from 'utils/Array';
+import { message } from 'config/whatapp'
 
 export const services: Service[] = [
   {
@@ -19,9 +20,9 @@ export const services: Service[] = [
     video_text: 'agents.video_text',
     // video_url: 'https://www.youtube.com/watch?v=0O2aH4XLbto',
     video_url: null,
-    // btn_text: 'agents.btn_link',
-    btn_text: null,
-    btn_link: null,
+    btn_text: 'agents.btn_link',
+    // btn_text: null,
+    btn_link: message.contact,
     features: {
       img: '/assets/images/home-four/features-thumb.webp',
       title: 'agents.features.title',
@@ -46,10 +47,10 @@ export const services: Service[] = [
     video_text: 'custom_soft.video_text',
     // video_url: 'https://www.youtube.com/watch?v=0O2aH4XLbto',
     video_url: null,
-    // btn_text: 'custom_soft.btn_link',
-    btn_text: null,
+    btn_text: 'custom_soft.btn_link',
+    // btn_text: null,
     // btn_link: '#',
-    btn_link: null,
+    btn_link: message.contact,
     features: {
       img: '/assets/images/home-four/features-thumb.webp',
       title: 'custom_soft.features.title',
@@ -74,10 +75,10 @@ export const services: Service[] = [
     video_text: 'Ver demo',
     // video_url: 'https://www.youtube.com/watch?v=0O2aH4XLbto',
     video_url: null,
-    // btn_text: 'Más información',
-    btn_text: null,
+    btn_text: 'Más información',
+    // btn_text: null,
     // btn_link: '#',
-    btn_link: null,
+    btn_link: message.contact,
     features: {
       img: '/assets/images/home-four/features-thumb.webp',
       title: 'Automatización de procesos',
@@ -102,10 +103,11 @@ export const services: Service[] = [
     video_text: 'Ver demo',
     // video_url: 'https://www.youtube.com/watch?v=0O2aH4XLbto',
     video_url: null,
-    // btn_text: 'Más información',
-    btn_text: null,
+    btn_text: 'Más información',
+    // btn_text: null,
     // btn_link: '#',
-    btn_link: null,
+    // btn_link: null,
+    btn_link: message.contact,
     features: {
       img: '/assets/images/home-four/features-thumb.webp',
       title: 'Automatización de procesos',
@@ -130,10 +132,11 @@ export const services: Service[] = [
     video_text: 'Ver demo',
     // video_url: 'https://www.youtube.com/watch?v=0O2aH4XLbto',
     video_url: null,
-    // btn_text: 'Más información',
-    btn_text: null,
+    btn_text: 'Más información',
+    // btn_text: null,
     // btn_link: '#',
-    btn_link: null,
+    // btn_link: null,
+    btn_link: message.contact,
     features: {
       img: '/assets/images/home-four/features-thumb.webp',
       title: 'Automatización de procesos',
@@ -158,10 +161,11 @@ export const services: Service[] = [
     video_text: 'Ver demo',
     // video_url: 'https://www.youtube.com/watch?v=0O2aH4XLbto',
     video_url: null,
-    // btn_text: 'Más información',
-    btn_text: null,
+    btn_text: 'Más información',
+    // btn_text: null,
     // btn_link: '#',
-    btn_link: null,
+    // btn_link: null,
+    btn_link: message.contact,
     features: {
       img: '/assets/images/home-four/features-thumb.webp',
       title: 'Automatización de procesos',

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
 import api from '../../components/requests/api';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export const ContactForm = () => {
   const { t } = useTranslation();
@@ -11,6 +12,12 @@ export const ContactForm = () => {
   const [name, setName] = useState(null);
   const [phone, setPhone] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null);
+
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+    //setValue('recaptchaToken', value); // Registra el valor en React Hook Form
+  };
 
   const handleSubmit = async () => {
     if (!email || !message || !subject || !name || !phone) {
@@ -34,6 +41,20 @@ export const ContactForm = () => {
     if (!email.match(validRegex)) {
       setLoading(false);
       toast.info('Email invalid', {
+        position: 'top-center',
+        autoClose: 1500,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark'
+      });
+      return;
+    }
+
+    if (!captchaValue) {
+      toast.info('Por favor, completa el CAPTCHA antes de enviar.', {
         position: 'top-center',
         autoClose: 1500,
         hideProgressBar: true,
@@ -79,7 +100,7 @@ export const ContactForm = () => {
         <form
           action={() => {
             setLoading(true);
-            handleSubmit()
+            handleSubmit();
           }}
           className="grid grid-cols-6 md:grid-cols-12 gap-[30px]"
         >
@@ -115,6 +136,10 @@ export const ContactForm = () => {
           ></textarea>
 
           <div className="col-span-6 md:col-span-12">
+          <ReCAPTCHA
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+            onChange={handleCaptchaChange}
+            />
             <button
               role="submit"
               className={`home-two-btn-bg py-2.5 group bg-purple border-purple ${
@@ -161,6 +186,7 @@ export const ContactForm = () => {
                 />
               </svg>
             </button>
+            
           </div>
         </form>
       </div>
